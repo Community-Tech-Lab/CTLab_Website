@@ -1,0 +1,17 @@
+.banner {
+    position: relative;
+}
+
+.layer {
+    position: absolute;
+}
+
+.banner-img {
+    z-index: 1;
+}
+
+.banner-text {
+    color: white;
+    z-index: 2;
+    background-color: yellow;
+}
