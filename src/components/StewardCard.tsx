@@ -1,3 +1,4 @@
+import React from "react";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 
@@ -5,12 +6,23 @@ interface Props {
   title: string;
   image: string;
   bodyText: string;
+  date: string;
 }
-const StewardCard = ({ title, image, bodyText }: Props) => {
+
+const StewardCard = ({ title, image, bodyText, date }: Props) => {
+  const cardStyle: React.CSSProperties = {
+    textWrap: "wrap",
+    display: "flex",
+    flexFlow: "column",
+    justifyContent: "center",
+    height: "100%",
+  };
+
   return (
-    <Col>
+    <Col style={cardStyle} xs={12} lg={4} className="">
+      <Image src={image} fluid />
       <h1>{title}</h1>
-      <Image src={image} />
+      <h2>{date}</h2>
       <p>{bodyText}</p>
     </Col>
   );
