@@ -14,7 +14,7 @@ const Stewards = () => {
         bannerColor="red"
         image={bannerPicture}
       />
-      <Row>{/* <StewardCard /> */}</Row>
+      <Row></Row>
     </Container>
   );
 };
