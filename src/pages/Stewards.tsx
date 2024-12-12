@@ -6,28 +6,38 @@ import Row from "react-bootstrap/Row";
 import StewardCard from "../components/StewardCard.tsx";
 import theJoyProjImg from "../assets/TheJoyProject.jpeg";
 import piper from "../assets/Piper.jpeg";
-import { PiPi } from "react-icons/pi";
+import TextImgBlock from "../components/TextImgBlock.tsx";
+import logo from "../assets/PNK Logos/4.svg";
 
 const Stewards = () => {
-  const joyProjectText =
+  const exampleText =
     "Lorem ipsum odor amet, consectetuer adipiscing elit. Metus eros lacinia hac consequat nec varius erat primis imperdiet. Proin eu suscipit tempus enim enim. Nascetur eget orci congue tincidunt nulla natoque iaculis nibh. At hac hendrerit sociosqu fames tincidunt ornare molestie primis. Purus maecenas habitasse mauris consectetur sociosqu duis ante vivamus. Non natoque sapien sodales taciti lectus etiam habitant consectetur.";
 
   return (
     <>
       <Menu />
       <Banner
-        bannerText="Meet the Stewards"
+        bannerText="The Future of Community-Owned Networks"
         bannerColor="red"
         image={bannerPicture}
       />
-      <Container fluid>
+      <Container>
         <Row>
-          <h1>Discover Our Stewards</h1>
+          <TextImgBlock image={logo} bodyText={exampleText} title="about us" />
+        </Row>
+        <Row
+          style={{
+            color: "#3004Af",
+          }}
+        >
+          <h1 style={{ fontSize: "4.2rem" }} className="space-grotesk">
+            Discover Our Stewards
+          </h1>
         </Row>
         <Row>
           <StewardCard
             title="The Joy Project"
-            bodyText={joyProjectText}
+            bodyText={exampleText}
             image={theJoyProjImg}
             date="October 7th - 10th"
           />
@@ -35,22 +45,7 @@ const Stewards = () => {
           <StewardCard
             title="Detroit Black Food Sovereignty Network"
             date="October 7th - 10th"
-            bodyText={joyProjectText}
-            image={piper}
-          />
-          <StewardCard
-            title="Detroit Black Food Sovereignty Network"
-            date="October 7th - 10th"
-            bodyText={joyProjectText}
-            image={piper}
-          />
-        </Row>
-
-        <Row>
-          <StewardCard
-            title="Detroit Black Food Sovereignty Network"
-            date="October 7th - 10th"
-            bodyText={joyProjectText}
+            bodyText={exampleText}
             image={piper}
           />
         </Row>
