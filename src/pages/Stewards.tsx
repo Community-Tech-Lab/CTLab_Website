@@ -11,6 +11,7 @@ const Stewards = () => {
         bannerColor="red"
         image={bannerPicture}
       />
+      <p>Hi</p>
     </div>
   );
 };
