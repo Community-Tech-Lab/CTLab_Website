@@ -3,6 +3,7 @@ import Menu from "../components/Menu.tsx";
 import Banner from "../components/Banner.tsx";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import StewardCard from "../components/StewardCard.tsx";
 
 const Stewards = () => {
   return (
@@ -13,7 +14,7 @@ const Stewards = () => {
         bannerColor="red"
         image={bannerPicture}
       />
-      <Row></Row>
+      <Row>{/* <StewardCard /> */}</Row>
     </Container>
   );
 };
