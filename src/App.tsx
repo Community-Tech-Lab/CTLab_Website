@@ -4,6 +4,7 @@ import home_banner from "./assets/Homepage_banner.svg";
 //component imports
 import Banner from "./components/Banner";
 import Menu from "./components/Menu";
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -16,6 +17,7 @@ function App() {
         bannerText="Community Tech Lab"
         image={home_banner}
       />
+
       <Menu />
       <Container>
         <Row>

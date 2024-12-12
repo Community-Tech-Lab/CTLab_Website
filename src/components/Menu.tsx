@@ -65,7 +65,7 @@ const Menu = () => {
                   style={{
                     color: "white",
                   }}
-                  to="https://communitytechny.org"
+                  to="/CTLab_Website/stewards"
                 >
                   <h3>Meet the Stewards</h3>
                 </Link>
