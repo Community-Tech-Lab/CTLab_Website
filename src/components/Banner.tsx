@@ -28,7 +28,7 @@ const Banner = ({ image, bannerText, bannerColor }: Props) => {
     return () => mediaQuery.removeEventListener("change", handleResize);
   }, []);
 
-  const bannerStyle = {
+  const bannerStyle: React.CSSProperties = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -38,7 +38,7 @@ const Banner = ({ image, bannerText, bannerColor }: Props) => {
     backgroundRepeat: "no-repeat",
   };
 
-  const bannerTextStyle = {
+  const bannerTextStyle: React.CSSProperties = {
     color: "white",
     backgroundColor: bannerColor,
     opacity: "95%",
