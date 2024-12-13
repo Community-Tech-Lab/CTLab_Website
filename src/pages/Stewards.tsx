@@ -4,10 +4,12 @@ import Banner from "../components/Banner.tsx";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import StewardCard from "../components/StewardCard.tsx";
+
 import TextImgBlock from "../components/TextImgBlock.tsx";
 
 //Image imports
 import logo from "../assets/PNK Logos/4.svg";
+import KCAW from "../assets/KCAW.jpeg";
 import theJoyProjImg from "../assets/TheJoyProject.jpeg";
 import piper from "../assets/Piper.jpeg";
 import bannerPicture from "../assets/visit_banner.svg";
@@ -46,6 +48,14 @@ const Stewards = () => {
           </h1>
         </Row>
         <Row>
+          <StewardCard
+            title="KCAW Raven Radio"
+            bodyText={
+              "KCAW is a community radio station located in sitka, alaska. KCAW provides essential information services such as Emergency Alert System and AMBER announcements and severe weather warnings, as well as local, regional, state, national and international news. As a member of CoastAlaska, it createS and archiveS stories OF ITS COMMUNITY MEMBERS as radio content for the station to broadcast. "
+            }
+            image={KCAW}
+            date="October 15th - 18th"
+          />
           <StewardCard
             title="The Joy Project"
             bodyText={exampleText}
