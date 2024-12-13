@@ -7,18 +7,26 @@ interface Props {
   image: string;
   title: string;
   bodyText: string;
+  flip: boolean;
 }
 
-const TextImgBlock = ({ bodyText, image, title }: Props) => {
+const TextImgBlock = ({ bodyText, image, title, flip }: Props) => {
   return (
-    <Col xs={12}>
+    <Col xs={12} className="my-3">
       <Container>
         <Row>
-          <Col>
+          <Col
+            xs={12}
+            md={6}
+            className="d-flex justify-content-center flex-column"
+          >
             <Image fluid src={image} />
           </Col>
-          <Col className="d-flex justify-content-center flex-column">
-            <h2>{title}</h2>
+          <Col
+            md={{ order: flip ? "first" : "last" }}
+            className="d-flex justify-content-center flex-column"
+          >
+            <h1 className="border-bottom border-dark">{title}</h1>
             <p>{bodyText}</p>
           </Col>
         </Row>
