@@ -19,7 +19,7 @@ const Banner = ({ image, bannerText, bannerColor }: Props) => {
   );
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    const mediaQuery: MediaQueryList = window.matchMedia("(max-width: 768px)");
 
     const handleResize = (e: MediaQueryListEvent) => setIsMobile(e.matches);
 
@@ -51,7 +51,7 @@ const Banner = ({ image, bannerText, bannerColor }: Props) => {
   };
 
   return (
-    <Container fluid className="">
+    <Container fluid className="space-grotesk">
       <Row>
         <Col xs={12} className="p-0" style={bannerStyle}>
           <div style={bannerTextStyle}>
