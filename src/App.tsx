@@ -1,5 +1,5 @@
 //image imports
-import home_banner from "./assets/Homepage_banner.svg";
+import home_banner from "./assets/lab_photo.svg";
 
 //component imports
 import Banner from "./components/Banner";

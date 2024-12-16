@@ -12,6 +12,7 @@ import { useState } from "react";
 const Menu = () => {
   //hooks
   const [showMenu, setShowMenu] = useState<boolean>(false);
+
   const handleMenu = () => {
     if (showMenu == false) setShowMenu(true);
     else setShowMenu(false);

@@ -43,7 +43,7 @@ const Stewards = () => {
             flip={false}
             image={logo}
             bodyText={aboutUsText}
-            title="About Us"
+            title="What are Digital Stewards?"
           />
         </Row>
         <Row>

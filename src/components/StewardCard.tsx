@@ -1,3 +1,4 @@
+//component imports
 import React from "react";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
