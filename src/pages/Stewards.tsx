@@ -8,12 +8,12 @@ import TextImgBlock from "../components/TextImgBlock.tsx";
 
 //Image imports
 import logo from "../assets/PNK Logos/4.svg";
-import kcawImg from "../assets/KCAW.jpeg";
-import theJoyProjImg from "../assets/TheJoyProject.jpeg";
-import piperImg from "../assets/Piper.jpeg";
-import rccImg from "../assets/rrc.jpg";
 import bannerPicture from "../assets/visit_banner.svg";
-import endstateAtlImg from "../assets/endstateATL.jpg";
+import kcawImg from "../assets/Steward Photos/KCAW.jpeg";
+import theJoyProjImg from "../assets/Steward Photos/TheJoyProject.jpeg";
+import piperImg from "../assets/Steward Photos/Piper.jpeg";
+import rccImg from "../assets/Steward Photos/rrc.jpg";
+import endstateAtlImg from "../assets/Steward Photos/endstateATL.jpg";
 import IENimg from "../assets/Govinda.jpeg";
 // import rrcImg2 from "../assets/RRC.jpeg";
 import Bvlbancha from "../assets/bvlbancha.jpeg";
@@ -49,25 +49,23 @@ const Stewards = () => {
     "Los Sures is a community-based organization in Williamsburg, Brooklyn, dedicated to preserving affordable housing, supporting family well-being, and fostering neighborhood diversity. Founded in 1972, it addresses housing issues, advocates for tenants, and provides resources such as a food pantry, hydroponic farm, senior centers, and community outreach programs. Los Sures has played a pioneering role in managing and rehabilitating city-owned properties, promoting housing equity in the face of gentrification. ";
   return (
     <>
-      <Menu />
       <Banner
         bannerText="The Future of Community-Owned Networks"
         bannerColor="red"
         image={bannerPicture}
       />
+      <Menu />
       <Container>
         <Row>
           <TextImgBlock
             flip={false}
             image={logo}
             bodyText={aboutUsText}
-            title="About Us"
+            title="What are Digital Stewards?"
           />
         </Row>
         <Row>
-          <h1 style={{ fontSize: "4.2rem" }} className="main-heading">
-            Discover Our Stewards
-          </h1>
+          <h1 className="main-heading">Discover Our Stewards</h1>
         </Row>
         <Row>
           <StewardCard

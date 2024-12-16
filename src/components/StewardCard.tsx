@@ -1,3 +1,4 @@
+//component imports
 import React from "react";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
@@ -21,7 +22,7 @@ const StewardCard = ({ title, image, bodyText, date, link }: Props) => {
   };
 
   return (
-    <Col className="space-grotesk" style={cardStyle} xs={12} lg={4}>
+    <Col className="space-grotesk-small" style={cardStyle} xs={12} lg={4}>
       <Image src={image} fluid className="py-3" />
       <Link
         to={link}

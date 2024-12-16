@@ -5,7 +5,7 @@ import Image from "react-bootstrap/Image";
 
 interface Props {
   image: string;
-  title: string;
+  title?: string;
   bodyText: string;
   flip: boolean;
 }
@@ -20,14 +20,30 @@ const TextImgBlock = ({ bodyText, image, title, flip }: Props) => {
             md={6}
             className="d-flex justify-content-center flex-column"
           >
-            <Image fluid src={image} />
+            <Image fluid src={image} rounded />
           </Col>
           <Col
             md={{ order: flip ? "first" : "last" }}
-            className="d-flex justify-content-center flex-column"
+            className={
+              title
+                ? "d-flex justify-content-center flex-column"
+                : "d-flex justify-content-center flex-column align-items-center"
+            }
           >
-            <h1 className="border-bottom border-dark sub-heading">{title}</h1>
-            <p className="space-grotesk">{bodyText}</p>
+            {title ? (
+              <h1 className="border-bottom border-dark sub-heading py-2">
+                {title}
+              </h1>
+            ) : null}
+            <p
+              className={
+                title
+                  ? "space-grotesk-small p-3"
+                  : "space-grotesk-small boxxed-text p-3"
+              }
+            >
+              {bodyText}
+            </p>
           </Col>
         </Row>
       </Container>
