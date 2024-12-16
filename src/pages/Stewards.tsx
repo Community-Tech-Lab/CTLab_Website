@@ -13,7 +13,7 @@ import theJoyProjImg from "../assets/TheJoyProject.jpeg";
 import piper from "../assets/Piper.jpeg";
 import RRC from "../assets/RRC.jpeg";
 import bannerPicture from "../assets/visit_banner.svg";
-import EndstateATL from "../assets/endstateATL.png";
+import EndstateATL from "../assets/endstate.png";
 
 const Stewards = () => {
   const stewardDesc =
@@ -58,6 +58,14 @@ const Stewards = () => {
             }
             image={KCAW}
             date="October 15th - 18th"
+          />
+          <StewardCard
+            title="EndState ATL"
+            date="September 9th - 12th"
+            bodyText={
+              "EndstateATL is an Atlanta-based community organization dedicated to Black liberation, rooted in Black Queer Feminist principles. It focuses on building a future grounded in justice and equity through programs and initiatives that empower marginalized communities. "
+            }
+            image={EndstateATL}
           />
           <StewardCard
             title="The Joy Project"
