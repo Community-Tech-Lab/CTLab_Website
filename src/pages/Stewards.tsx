@@ -8,12 +8,12 @@ import TextImgBlock from "../components/TextImgBlock.tsx";
 
 //Image imports
 import logo from "../assets/PNK Logos/4.svg";
-import kcawImg from "../assets/KCAW.jpeg";
-import theJoyProjImg from "../assets/TheJoyProject.jpeg";
-import piperImg from "../assets/Piper.jpeg";
-import rccImg from "../assets/rrc.jpg";
 import bannerPicture from "../assets/visit_banner.svg";
-import endstateAtlImg from "../assets/endstateATL.jpg";
+import kcawImg from "../assets/Steward Photos/KCAW.jpeg";
+import theJoyProjImg from "../assets/Steward Photos/TheJoyProject.jpeg";
+import piperImg from "../assets/Steward Photos/Piper.jpeg";
+import rccImg from "../assets/Steward Photos/rrc.jpg";
+import endstateAtlImg from "../assets/Steward Photos/endstateATL.jpg";
 
 const Stewards = () => {
   const aboutUsText: string =
@@ -31,12 +31,12 @@ const Stewards = () => {
 
   return (
     <>
-      <Menu />
       <Banner
         bannerText="The Future of Community-Owned Networks"
         bannerColor="red"
         image={bannerPicture}
       />
+      <Menu />
       <Container>
         <Row>
           <TextImgBlock
@@ -47,9 +47,7 @@ const Stewards = () => {
           />
         </Row>
         <Row>
-          <h1 style={{ fontSize: "4.2rem" }} className="main-heading">
-            Discover Our Stewards
-          </h1>
+          <h1 className="main-heading">Discover Our Stewards</h1>
         </Row>
         <Row>
           <StewardCard
