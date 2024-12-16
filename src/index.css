@@ -1,0 +1,23 @@
+.space-grotesk {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.main-heading {
+    color: #3004af;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 525;
+    font-style: normal;
+    border-bottom: 3px solid #3004af;
+}
+
+.sub-heading {
+    color: #80389e;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
