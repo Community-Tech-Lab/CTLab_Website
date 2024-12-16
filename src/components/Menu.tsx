@@ -40,7 +40,12 @@ const Menu = () => {
   return (
     <div onClick={handleMenu} style={bttnStyle}>
       <CiMenuBurger />
-      <Offcanvas style={menuStyle} show={showMenu} onHide={handleMenu}>
+      <Offcanvas
+        style={menuStyle}
+        show={showMenu}
+        onHide={handleMenu}
+        className="space-grotesk"
+      >
         <Offcanvas.Header closeButton>
           <h1 className="border-bottom w-100">Menu</h1>
         </Offcanvas.Header>

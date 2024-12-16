@@ -20,14 +20,8 @@ const StewardCard = ({ title, image, bodyText, date }: Props) => {
 
   return (
     <Col className="space-grotesk" style={cardStyle} xs={12} lg={4}>
-      <Image src={image} fluid />
-      <h1
-        style={{
-          color: "#80389E",
-        }}
-      >
-        {title}
-      </h1>
+      <Image src={image} fluid className="py-3" />
+      <h1 className="sub-heading">{title}</h1>
       <h2>{date}</h2>
       <p>{bodyText}</p>
     </Col>

@@ -26,8 +26,8 @@ const TextImgBlock = ({ bodyText, image, title, flip }: Props) => {
             md={{ order: flip ? "first" : "last" }}
             className="d-flex justify-content-center flex-column"
           >
-            <h1 className="border-bottom border-dark">{title}</h1>
-            <p>{bodyText}</p>
+            <h1 className="border-bottom border-dark sub-heading">{title}</h1>
+            <p className="space-grotesk">{bodyText}</p>
           </Col>
         </Row>
       </Container>
