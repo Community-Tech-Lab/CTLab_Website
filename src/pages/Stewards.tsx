@@ -71,6 +71,7 @@ const Stewards = () => {
         </Row>
         <Row>
           <StewardCard
+            link="https://www.kcaw.org/"
             title="KCAW Raven Radio"
             bodyText={kcawText}
             image={kcawImg}
@@ -82,6 +83,7 @@ const Stewards = () => {
             bodyText={joyProjectText}
             image={theJoyProjImg}
             date="October 7th - 10th"
+            link="https://www.joytheproject.com/"
           />
 
           <StewardCard
@@ -89,6 +91,7 @@ const Stewards = () => {
             date="October 7th - 10th"
             bodyText={detroitNetworkText}
             image={piperImg}
+            link="http://dbcfsn.org/"
           />
 
           <StewardCard
@@ -96,54 +99,56 @@ const Stewards = () => {
             date="September 23rd - 26th"
             bodyText={rrcText}
             image={rccImg}
+            link="https://www.pitzer.edu/offices/redfordconservancy"
           />
           <StewardCard
             title="EndState ATL"
             date="September 9th - 12th"
             bodyText={endstateText}
             image={endstateAtlImg}
+            link="https://www.endstateatl.org/"
           />
           <StewardCard
             title="Indigenous Environmental Network"
             date="June 24th - 27th"
             bodyText={ienText}
             image={IENimg}
+            link="https://www.ienearth.org/"
           />
-          {/* <StewardCard
-            title="Robert Redford Conservancy"
-            date="September 23rd - 26th"
-            bodyText={rrcText}
-            image={rrcImg2}
-          /> */}
           <StewardCard
             title="Bvlbancha Liberation Radio"
             date="June 24th - 27th"
             bodyText={bvlbanchaText}
             image={Bvlbancha}
+            link="http://www.bvlbancharadio.net/"
           />
           <StewardCard
             title="Activation Residency"
             date="June 17th - 20th"
             bodyText={acText}
             image={AC}
+            link="http://activationresidency.com/"
           />
           <StewardCard
             title="Aprodec Inc"
             date="May 6th - 10th"
             bodyText={aprodecText}
             image={APRODEC}
+            link="http://aprodec.net/"
           />
           <StewardCard
             title="Latino Climate Action Network"
             date="May 6th - 10th"
             bodyText={LCANText}
             image={LCAN}
+            link="https://www.cakex.org/community/directory/organizations/latino-climate-action-network-lcanx"
           />
           <StewardCard
             title="Los Sures"
             date="April 29th - May 2nd"
             bodyText={LSText}
             image={LS}
+            link="https://www.southsideunitedhdfc.org/about-us/mission-history/"
           />
         </Row>
       </Container>
