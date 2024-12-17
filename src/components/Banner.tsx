@@ -3,31 +3,14 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-//hook imports
-import { useEffect, useState } from "react";
-
 interface Props {
   image: string;
   bannerText: string;
   bannerColor: string;
+  isMobile: boolean;
 }
 
-const Banner = ({ image, bannerText, bannerColor }: Props) => {
-  //hooks
-  const [isMobile, setIsMobile] = useState<boolean>(
-    window.matchMedia("(max-width: 768px").matches,
-  );
-
-  useEffect(() => {
-    const mediaQuery: MediaQueryList = window.matchMedia("(max-width: 768px)");
-
-    const handleResize = (e: MediaQueryListEvent) => setIsMobile(e.matches);
-
-    mediaQuery.addEventListener("change", handleResize);
-
-    return () => mediaQuery.removeEventListener("change", handleResize);
-  }, []);
-
+const Banner = ({ image, bannerText, bannerColor, isMobile }: Props) => {
   const bannerStyle: React.CSSProperties = {
     display: "flex",
     justifyContent: "center",

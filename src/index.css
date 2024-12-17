@@ -37,3 +37,12 @@
     height: fit-content;
     box-shadow: 2px 1px 1px rgba(204, 204, 204, 20);
 }
+
+.banner-heading {
+    color: white;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    border-bottom: white solid 3px;
+}

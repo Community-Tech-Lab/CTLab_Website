@@ -17,7 +17,7 @@ const TextImgBlock = ({ bodyText, image, title, flip }: Props) => {
         <Row>
           <Col
             xs={12}
-            md={6}
+            md={5}
             className="d-flex justify-content-center flex-column"
           >
             <Image fluid src={image} rounded />
@@ -39,7 +39,7 @@ const TextImgBlock = ({ bodyText, image, title, flip }: Props) => {
               className={
                 title
                   ? "space-grotesk-small p-3"
-                  : "space-grotesk-small boxxed-text p-3"
+                  : "space-grotesk boxxed-text p-3"
               }
             >
               {bodyText}
