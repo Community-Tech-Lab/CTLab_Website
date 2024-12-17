@@ -1,4 +1,5 @@
 //image imports
+import pnkImg from "./assets/Homepage_banner.svg";
 import home_banner from "./assets/lab_photo.svg";
 import antenna_logo from "./assets/PNK Logos/1.svg";
 import nyuStewards from "./assets/nyu_stewards.svg";
@@ -38,7 +39,8 @@ function App() {
 
   const openingText: string =
     "The Community Tech Lab is a hands-on tech and digital equity learning space located at El Puente’s flagship Leadership Center in South Williamsburg.  The first of its kind in NYC, the Lab launched in January 2023 through a partnership between CTNY and El Puente and in collaboration with the communities it serves.";
-
+  const pnkText: string =
+    "The portable network kit is first and foremost a teaching too. Created by CTNY, It is a kit made using easily accesible hardware with the goal to teach people how to set up and maintain their own personal networks. It also serves as a disaster prevention device if built correctly. Allowing for people to communicate and share information without the need to connect to the internet.";
   return (
     <>
       <Banner
@@ -78,6 +80,19 @@ function App() {
         buttonLable="Learn More"
         buttonLink="stewards"
       />
+      <Container className="py-3 my-3">
+        <Row className="mt-3 mx-3">
+          <h1 className="main-heading">Portable Network Kits</h1>
+        </Row>
+        <Row>
+          <TextImgBlock
+            image={pnkImg}
+            bodyText={pnkText}
+            flip={false}
+            title="What are they? And why do we use them?"
+          />
+        </Row>
+      </Container>
     </>
   );
 }
