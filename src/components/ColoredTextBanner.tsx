@@ -5,6 +5,12 @@ import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
+interface bttnProps {
+  title: string;
+  link: string;
+  variant?: string;
+}
+
 interface Props {
   image1: string;
   image2: string;
@@ -13,8 +19,7 @@ interface Props {
   innerColor: string;
   bodyText: string;
   isMobile: boolean;
-  buttonLable?: string;
-  buttonLink?: string;
+  button?: bttnProps;
 }
 
 const ColoredTextBanner = ({
@@ -25,8 +30,7 @@ const ColoredTextBanner = ({
   innerColor,
   bodyText,
   isMobile,
-  buttonLink,
-  buttonLable,
+  button,
 }: Props) => {
   const bannerStyle: React.CSSProperties = {
     backgroundColor: outerColor,
@@ -61,12 +65,12 @@ const ColoredTextBanner = ({
                     </Col>
                     <Col xs={12} lg={6}>
                       <p className="space-grotesk-small">{bodyText}</p>
-                      <Link to={buttonLink ? buttonLink : "/"}>
+                      <Link to={button ? button.link : "/"}>
                         <Button
                           className="space-grotesk-small my-2"
                           variant="light"
                         >
-                          {buttonLable}
+                          {button?.title}
                         </Button>
                       </Link>
                     </Col>
