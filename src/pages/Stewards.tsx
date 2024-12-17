@@ -15,14 +15,31 @@ import piperImg from "../assets/Steward Photos/Piper.jpeg";
 import rccImg from "../assets/Steward Photos/rrc.jpg";
 import endstateAtlImg from "../assets/Steward Photos/endstateATL.jpg";
 import IENimg from "../assets/Govinda.jpeg";
-// import rrcImg2 from "../assets/RRC.jpeg";
 import Bvlbancha from "../assets/bvlbancha.jpeg";
 import AC from "../assets/activationresidency.jpeg";
 import APRODEC from "../assets/LCAN-Manuel-crimping.jpg";
 import LCAN from "../assets/LCAN.jpg";
 import LS from "../assets/los_sures.svg";
 
+//hook imports
+import { useEffect, useState } from "react";
+
 const Stewards = () => {
+  //hooks
+  const [isMobile, setIsMobile] = useState<boolean>(
+    window.matchMedia("(max-width: 768px").matches,
+  );
+
+  useEffect(() => {
+    const mediaQuery: MediaQueryList = window.matchMedia("(max-width: 768px)");
+
+    const handleResize = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+
+    mediaQuery.addEventListener("change", handleResize);
+
+    return () => mediaQuery.removeEventListener("change", handleResize);
+  }, []);
+
   const aboutUsText: string =
     "Digital Stewards are a group of technologists that work in local neighborhoods to build wireless networks, and develop local applications their communities need to foster healthy relationships, build resilience, and increase access to critical information.";
   const kcawText: string =
@@ -53,6 +70,7 @@ const Stewards = () => {
         bannerText="The Future of Community-Owned Networks"
         bannerColor="red"
         image={bannerPicture}
+        isMobile={isMobile}
       />
       <Menu />
       <Container>
