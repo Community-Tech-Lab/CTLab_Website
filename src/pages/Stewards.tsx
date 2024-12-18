@@ -23,6 +23,7 @@ import LS from "../assets/los_sures.svg";
 
 //hook imports
 import { useEffect, useState } from "react";
+import Footer from "../components/Footer.tsx";
 
 const Stewards = () => {
   //hooks
@@ -168,6 +169,7 @@ const Stewards = () => {
           />
         </Row>
       </Container>
+      <Footer />
     </>
   );
 };

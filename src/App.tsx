@@ -14,6 +14,7 @@ import Row from "react-bootstrap/Row";
 
 //hook imports
 import { useEffect, useState } from "react";
+import Footer from "./components/Footer";
 
 interface bttnProps {
   title: string;
@@ -114,6 +115,7 @@ function App() {
           />
         </Row>
       </Container>
+      <Footer />
     </>
   );
 }
