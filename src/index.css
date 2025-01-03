@@ -73,12 +73,10 @@
 }
 
 .part-box {
-    transition: 0.7s;
+    transition: 0.5s;
 }
 
 .part-box:hover {
     background-color: rgba(242, 242, 242, 70);
-    box-shadow:
-        3px,
-        2px rgb(217, 217, 217);
+    box-shadow: 5px 3px 3px rgb(217, 217, 217);
 }

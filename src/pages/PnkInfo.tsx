@@ -14,6 +14,7 @@ import PnkTab from "../components/PnkTab";
 import pnk_banner from "../assets/pnk_banner.svg";
 import teaching_kits from "../assets/PNK_teaching_kits.jpg";
 import pnkv1Img from "../assets/pnkv1Img.png";
+import pnkv2Img from "../assets/pnkv2Img.png";
 
 //hook imports
 import { useEffect, useState } from "react";
@@ -49,19 +50,70 @@ const PnkInfo = () => {
 
     `;
 
-  const pnkv1Text: string = `The original proof of concept, demonstration version of the PNK software image was created to run on a Raspberry Pi 3 by Andy Gunn and was not publicly shared.
-`;
+  const pnkv1Text: string = `The original proof of concept, demonstration version of the PNK created by Raul Enriquez to teach basic networking skills to community members.
+    `;
 
   const pnkv1Materials: Material[] = [
     {
       name: "Router",
-      desc: "A router capable of reading and identifying host names within a local network",
+      desc: "A router capable of reading and identifying host names within a local network no specific router is needed or reccomended.",
     },
     {
       name: "Raspberry Pi 3",
       desc: "This version of the kit's server build was built off the the 32-bit debian bookworm os that was made for this model of pi",
       link: "https://www.raspberrypi.com/products/raspberry-pi-3-model-b/",
-      price: "$25 - $50",
+      price: "$25.00 - $50.00",
+    },
+    {
+      name: "Server Build (Currenly Unavailable)",
+      desc: "This version of the PNK software image was created to run on a Raspberry Pi 3 by Andy Gunn and was not publicly shared.",
+      link: "https://github.com/Community-Tech-Lab/PNK-Software",
+    },
+  ];
+
+  const pnkv2Text: string = `This is the first version of the kit that was distributed publically. This version of the kit was meant to be deployed in communities to help build out their own infastructure for community onwed networks. The PNK v2 is a more modular design, allowing for the base kit to be expanded upon to fit the needs of the user. In other words there is no "Correct" way of putting this together.
+    `;
+
+  const pnkv2Materials: Material[] = [
+    {
+      name: "Mikrotik Hex PoE",
+      desc: "A small, affordable and easy to use router that is PoE endabled with smart ports capable of detecting PoE devices. Most importantly, it is compatible with the rest of the hardware and software. Allowing for the identification host names within a local network and also suppoorting the right voltages to power out antennas.",
+      link: "https://mikrotik.com/product/RB960PGS",
+      price: "$89.00",
+    },
+
+    {
+      name: "Ubiquiti EdgeRouter X (Discontinued)",
+      desc: `This was the router initially used for the PNKv2 as it offered a friendly UI and great compatibility with the Ubiquity Anttennas, However Ubiquiti Network's EdgeRouter X (ER-X) appears to have been discontinued, or at the very least been perpetually out of stock with no hint of ever coming back.`,
+      link: "https://store.ui.com/us/en/products/er-x",
+      price: "$59.00",
+    },
+
+    {
+      name: "Ubiquiti AC Mesh (UAP-AC-M)",
+      desc: "This is a compact, indoor/outdoor WiFi 5 AP with optional external antenna support for directional coverage. Stock has been known to be limited at times.",
+      link: "https://store.ui.com/us/en/category/wifi-outdoor/products/uap-ac-mesh?s=us&l=en",
+      price: "$99.00",
+    },
+
+    {
+      name: "Raspberry Pi 3b+",
+      desc: "The third Generation Raspberry Pi, this server build was also built off the the 32-bit debian bookworm os that was made for this model of pi.",
+      link: "https://www.raspberrypi.com/products/raspberry-pi-3-model-b-plus/",
+      price: "$35.00",
+    },
+
+    {
+      name: "Raspberry Pi 4b",
+      desc: "The fourth Generation Raspberry Pi, this server build was also built off the the 32-bit debian bookworm os which happens to be compatible with this model of pi. We reccomend the version with either 1 or 2 GB of RAM if you are going to use the PNKv2 version of the server build. The other versions don't seem to work with the PNKv2 server image.",
+      link: "https://www.raspberrypi.com/products/raspberry-pi-4-model-b/",
+      price: "Starting at $35.00",
+    },
+
+    {
+      name: "Server Build (Depricated)",
+      desc: "A 32bit PNK build pipeline created to run on both Raspberry Pi 3 and 4 by Josh King @jheretic and released under the GNU General Public License v3.0 (GPLv3). This version of the server image only works with Raspberry Pi 3 models and early models of the Raspberry Pi 4",
+      link: "https://github.com/Community-Tech-Lab/PNK-Software",
     },
   ];
 
@@ -116,9 +168,12 @@ const PnkInfo = () => {
                 />
               </Tab>
               <Tab title="PNK v2" eventKey="v2">
-                <h1 className="main-heading my-2 py-1">
-                  PNK Version 2.0 (2019)
-                </h1>
+                <PnkTab
+                  title="PNK Version 2.0 (2019)"
+                  image={pnkv2Img}
+                  body={pnkv2Text}
+                  matertials={pnkv2Materials}
+                ></PnkTab>
               </Tab>
               <Tab title="PNK v3" eventKey="v3">
                 <h1 className="main-heading my-2 py-1">

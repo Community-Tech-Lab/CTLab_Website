@@ -23,11 +23,22 @@ interface Props {
 const PnkTab = ({ title, body, image, matertials }: Props) => {
   return (
     <Container>
+      {/* header */}
       <Row>
         <Col xs={12}>
           <h1 className="main-heading my-2 py-1">{title}</h1>
         </Col>
       </Row>
+      {/* image */}
+      <Row>
+        <Col
+          xs={12}
+          className="d-flex justify-content-center flex-column align-items-center py-3"
+        >
+          <Image fluid rounded src={image} />
+        </Col>
+      </Row>
+      {/* body */}
       <Row>
         <Col>
           <p
@@ -40,14 +51,7 @@ const PnkTab = ({ title, body, image, matertials }: Props) => {
           </p>
         </Col>
       </Row>
-      <Row>
-        <Col
-          xs={12}
-          className="d-flex justify-content-center flex-column align-items-center py-3"
-        >
-          <Image fluid rounded src={image} />
-        </Col>
-      </Row>
+      {/* Materials */}
       <Row>
         <Col xs={12}>
           <h2 className="sub-heading"> Build Materials</h2>
@@ -66,11 +70,18 @@ const PnkTab = ({ title, body, image, matertials }: Props) => {
             <div>
               <h3 className="sub-heading">{material.name}</h3>
               <p>{material.desc}</p>
+              {material.price ? <p>Estimated Price: {material.price}</p> : null}
             </div>
-            <Link to={{ pathname: material ? material.link : "/" }}>
-              <Button className="space-grotesk-small my-3 p-0" variant={"link"}>
-                Learn More <GoLinkExternal />
-              </Button>
+
+            <Link to={material.link ? material.link : "/"}>
+              {material.link ? (
+                <Button
+                  className="space-grotesk-small my-3 p-0"
+                  variant={"link"}
+                >
+                  Learn More <GoLinkExternal />
+                </Button>
+              ) : null}
             </Link>
           </Col>
         ))}
