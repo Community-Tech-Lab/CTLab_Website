@@ -15,6 +15,7 @@ import pnk_banner from "../assets/pnk_banner.svg";
 import teaching_kits from "../assets/PNK_teaching_kits.jpg";
 import pnkv1Img from "../assets/pnkv1Img.png";
 import pnkv2Img from "../assets/pnkv2Img.png";
+import pnkv3Img from "../assets/pnkv3Img.jpeg";
 
 //hook imports
 import { useEffect, useState } from "react";
@@ -117,6 +118,40 @@ const PnkInfo = () => {
     },
   ];
 
+  const pnkv3Text: string = `This version was created in response to the release of the raspberry pi 5 in order to take advantage of the computation power of the machine. The server image can be found in the build materials below or at our GitHub @Community-Tech-Lab/PNK-Software under the releases section.`;
+  const pnkv3Materials: Material[] = [
+    {
+      name: "Mikrotik Hex PoE",
+      desc: "A small, affordable and easy to use router that is PoE endabled with smart ports capable of detecting PoE devices. Most importantly, it is compatible with the rest of the hardware and software. Allowing for the identification host names within a local network and also suppoorting the right voltages to power out antennas.",
+      link: "https://mikrotik.com/product/RB960PGS",
+      price: "$89.00",
+    },
+
+    {
+      name: "Ubiquiti AC Mesh (UAP-AC-M)",
+      desc: "This is a compact, indoor/outdoor WiFi 5 AP with optional external antenna support for directional coverage. Stock has been known to be limited at times.",
+      link: "https://store.ui.com/us/en/category/wifi-outdoor/products/uap-ac-mesh?s=us&l=en",
+      price: "$99.00",
+    },
+    {
+      name: "Raspberry Pi 5",
+      desc: "The fifth Generation Raspberry Pi, this server build was built off the the 64-bit debian bookworm. We reccomend the version with 8GB of RAM if you are going to use the PNKv3 version of the server build.",
+      link: "https://www.raspberrypi.com/products/raspberry-pi-5/",
+      price: "Starting at $50.00",
+    },
+    {
+      name: "Raspberry Pi 4b",
+      desc: "The fourth Generation Raspberry Pi, this server build was also built off the the 64-bit debian bookworm os which happens to be compatible with this model of pi. We reccomend the version with either 3 or 4 GB of RAM if you are going to use the PNKv3 version of the server build.",
+      link: "https://www.raspberrypi.com/products/raspberry-pi-4-model-b/",
+      price: "Starting at $35.00",
+    },
+    {
+      name: "Server Build",
+      desc: "A 64bit PNK disk image created to run on Raspberry Pi 5 by Oscar Kevin Comunidad @SkyMazter and released under the Apache License 2.0. Download Link Found Below.",
+      link: "https://github.com/Community-Tech-Lab/PNK-Software/releases/tag/v3.0.0",
+    },
+  ];
+
   return (
     <>
       <Banner
@@ -164,7 +199,7 @@ const PnkInfo = () => {
                   title="PNK Version 1.0 (2017)"
                   body={pnkv1Text}
                   image={pnkv1Img}
-                  matertials={pnkv1Materials}
+                  materials={pnkv1Materials}
                 />
               </Tab>
               <Tab title="PNK v2" eventKey="v2">
@@ -172,13 +207,20 @@ const PnkInfo = () => {
                   title="PNK Version 2.0 (2019)"
                   image={pnkv2Img}
                   body={pnkv2Text}
-                  matertials={pnkv2Materials}
+                  materials={pnkv2Materials}
                 ></PnkTab>
               </Tab>
               <Tab title="PNK v3" eventKey="v3">
-                <h1 className="main-heading my-2 py-1">
+                {/* <h1 className="main-heading my-2 py-1">
                   PNK Version 3.0 (2024)
-                </h1>
+                </h1> */}
+
+                <PnkTab
+                  title="PNK Version 3.0 (2024)"
+                  image={pnkv3Img}
+                  body={pnkv3Text}
+                  materials={pnkv3Materials}
+                ></PnkTab>
               </Tab>
             </Tabs>
           </Col>

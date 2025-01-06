@@ -17,10 +17,10 @@ interface Props {
   title: string;
   body: string;
   image: string;
-  matertials?: Material[];
+  materials?: Material[];
 }
 
-const PnkTab = ({ title, body, image, matertials }: Props) => {
+const PnkTab = ({ title, body, image, materials }: Props) => {
   return (
     <Container>
       {/* header */}
@@ -59,7 +59,7 @@ const PnkTab = ({ title, body, image, matertials }: Props) => {
       </Row>
 
       <Row>
-        {matertials?.map((material: Material, index) => (
+        {materials?.map((material: Material, index) => (
           <Col
             key={index}
             xs={12}
