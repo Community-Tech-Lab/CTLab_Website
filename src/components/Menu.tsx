@@ -84,6 +84,19 @@ const Menu = () => {
                   style={{
                     color: "white",
                   }}
+                  to="/CTLab_Website/pnks"
+                >
+                  <h3>Portable Network Kits</h3>
+                </Link>
+              </Col>
+            </Row>
+
+            <Row>
+              <Col>
+                <Link
+                  style={{
+                    color: "white",
+                  }}
                   to="https://communitytechny.org"
                 >
                   <h3>CTNY</h3>

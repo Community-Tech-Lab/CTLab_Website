@@ -10,6 +10,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 //style imports
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
+import PnkInfo from "./pages/PnkInfo.tsx";
 
 const root: HTMLElement = document.getElementById("root")!;
 
@@ -21,6 +22,7 @@ createRoot(root).render(
           {/* home page */}
           <Route index element={<App />}></Route>
           <Route path="/CTLab_Website/stewards/" element={<Stewards />}></Route>
+          <Route path="/CTLab_Website/pnks/" element={<PnkInfo />}></Route>
           {/* <Route path="/deployments" element={}></Route> */}
           {/* <Route path="/build-materials" element={}></Route> */}
           {/* <Route path="/team" element={}></Route> */}

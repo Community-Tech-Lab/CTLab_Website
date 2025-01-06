@@ -71,3 +71,12 @@
     width: 2rem;
     height: 2rem;
 }
+
+.part-box {
+    transition: 0.5s;
+}
+
+.part-box:hover {
+    background-color: rgba(242, 242, 242, 70);
+    box-shadow: 5px 3px 3px rgb(217, 217, 217);
+}
