@@ -1,10 +1,10 @@
 //component imports
-import Offcanvas from "react-bootstrap/Offcanvas";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { Link } from "react-router-dom";
+import Container from "react-bootstrap/Container";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import Row from "react-bootstrap/Row";
 import { CiMenuBurger } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 //hook imports
 import { useState } from "react";
@@ -74,6 +74,19 @@ const Menu = () => {
                   to="/CTLab_Website/stewards"
                 >
                   <h3>Meet the Stewards</h3>
+                </Link>
+              </Col>
+            </Row>
+
+            <Row>
+              <Col>
+                <Link
+                  style={{
+                    color: "white",
+                  }}
+                  to="/CTLab_Website/networks"
+                >
+                  <h3>Explore Community Networks</h3>
                 </Link>
               </Col>
             </Row>

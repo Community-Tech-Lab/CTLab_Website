@@ -1,8 +1,11 @@
-//in progress
+import Container from "react-bootstrap/Container";
+import Menu from "../components/Menu";
+
 const CommunityNetworks = () => {
   return (
     <>
-      <div></div>
+      <Menu />
+      <Container></Container>
     </>
   );
 };
