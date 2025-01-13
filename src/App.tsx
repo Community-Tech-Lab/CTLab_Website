@@ -1,16 +1,16 @@
 //image imports
-import pnkImg from "./assets/pnkimage_2.svg";
 import home_banner from "./assets/lab_photo.svg";
-import antenna_logo from "./assets/PNK Logos/1.svg";
 import nyuStewards from "./assets/nyu_stewards.svg";
+import antenna_logo from "./assets/PNK Logos/1.svg";
 import teachingKits from "./assets/PNK_teaching_kits.svg";
+import pnkImg from "./assets/pnkimage_2.svg";
 //component imports
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 import Banner from "./components/Banner";
 import ColoredTextBanner from "./components/ColoredTextBanner";
 import Menu from "./components/Menu";
 import TextImgBlock from "./components/TextImgBlock";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
 
 //hook imports
 import { useEffect, useState } from "react";
@@ -48,7 +48,7 @@ function App() {
   const openingText: string =
     "The Community Tech Lab is a hands-on tech and digital equity learning space located at El Puente’s flagship Leadership Center in South Williamsburg.  The first of its kind in NYC, the Lab launched in January 2023 through a partnership between CTNY and El Puente and in collaboration with the communities it serves.";
 
-  const pnkText: string = `The portable network kit is first and foremost a teaching tool. Created by CTNY, it is a kit made using easily accessible hardware with the goal to teach people how to set up and maintain their own personal networks. It also serves as a disaster prevention device and allows for people to communicate and share information without the need to connect to the internet.
+  const pnkText: string = `The portable network kit is first and foremost a teaching tool. Created by CTNY, it is a kit made using easily accessible hardware with the goal to teach people how to set up and maintain their own personal networks. It also serves as a emergency communication device and allows for people to communicate and share information without the need to connect to the internet.
 
     `;
 
