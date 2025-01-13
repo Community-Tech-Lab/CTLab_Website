@@ -2,7 +2,9 @@
 const CommunityNetworks = () => {
   return (
     <>
-      <div></div>
+      <div>
+        <p>Hello World </p>
+      </div>
     </>
   );
 };
