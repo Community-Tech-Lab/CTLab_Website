@@ -18,11 +18,11 @@ createRoot(root).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/CTLab_Website">
+        <Route path="/">
           {/* home page */}
           <Route index element={<App />}></Route>
-          <Route path="/CTLab_Website/stewards/" element={<Stewards />}></Route>
-          <Route path="/CTLab_Website/pnks/" element={<PnkInfo />}></Route>
+          <Route path="/stewards/" element={<Stewards />}></Route>
+          <Route path="/pnks/" element={<PnkInfo />}></Route>
           {/* <Route path="/deployments" element={}></Route> */}
           {/* <Route path="/build-materials" element={}></Route> */}
           {/* <Route path="/team" element={}></Route> */}
