@@ -66,7 +66,7 @@ function App() {
   return (
     <>
       <Banner
-        bannerColor={"#fceb00"}
+        bannerColor={"#CF698f"}
         bannerText="Community Tech Lab"
         image={home_banner}
         isMobile={isMobile}

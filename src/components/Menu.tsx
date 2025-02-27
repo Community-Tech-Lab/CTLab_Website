@@ -58,7 +58,7 @@ const Menu = () => {
                   style={{
                     color: "white",
                   }}
-                  to="/CTLab_Website"
+                  to="/"
                 >
                   <h3>Home</h3>
                 </Link>
@@ -71,7 +71,7 @@ const Menu = () => {
                   style={{
                     color: "white",
                   }}
-                  to="/CTLab_Website/stewards"
+                  to="/stewards"
                 >
                   <h3>Meet the Stewards</h3>
                 </Link>
@@ -84,7 +84,7 @@ const Menu = () => {
                   style={{
                     color: "white",
                   }}
-                  to="/CTLab_Website/pnks"
+                  to="/pnks"
                 >
                   <h3>Portable Network Kits</h3>
                 </Link>
