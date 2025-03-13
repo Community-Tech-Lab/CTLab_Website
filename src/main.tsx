@@ -5,7 +5,7 @@ import { createRoot } from "react-dom/client";
 //component imports
 import App from "./App.tsx";
 import Stewards from "./pages/Stewards.tsx";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 //style imports
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -16,18 +16,18 @@ const root: HTMLElement = document.getElementById("root")!;
 
 createRoot(root).render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/">
           {/* home page */}
           <Route index element={<App />}></Route>
-          <Route path="/stewards/" element={<Stewards />}></Route>
-          <Route path="/pnks/" element={<PnkInfo />}></Route>
+          <Route path="/stewards" element={<Stewards />}></Route>
+          <Route path="/pnks" element={<PnkInfo />}></Route>
           {/* <Route path="/deployments" element={}></Route> */}
           {/* <Route path="/build-materials" element={}></Route> */}
           {/* <Route path="/team" element={}></Route> */}
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>,
 );

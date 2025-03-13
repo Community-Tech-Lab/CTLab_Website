@@ -1,6 +1,6 @@
 {
   "name": "ctlab-website",
-  "homepage": "https://communitytechlab.org",
+  "homepage": "https://communitytechlab.org/#",
   "private": true,
   "version": "0.0.0",
   "type": "module",
