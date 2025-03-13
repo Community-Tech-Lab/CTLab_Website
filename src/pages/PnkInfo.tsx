@@ -194,14 +194,15 @@ const PnkInfo = () => {
         <Row>
           <Col xs={12}>
             <Tabs className="space-grotesk-small">
-              <Tab title="PNK v1" eventKey="v1">
+              <Tab title="PNK v3" eventKey="v3">
                 <PnkTab
-                  title="PNK Version 1.0 (2017)"
-                  body={pnkv1Text}
-                  image={pnkv1Img}
-                  materials={pnkv1Materials}
-                />
+                  title="PNK Version 3.0 (2024)"
+                  image={pnkv3Img}
+                  body={pnkv3Text}
+                  materials={pnkv3Materials}
+                ></PnkTab>
               </Tab>
+
               <Tab title="PNK v2" eventKey="v2">
                 <PnkTab
                   title="PNK Version 2.0 (2019)"
@@ -210,17 +211,14 @@ const PnkInfo = () => {
                   materials={pnkv2Materials}
                 ></PnkTab>
               </Tab>
-              <Tab title="PNK v3" eventKey="v3">
-                {/* <h1 className="main-heading my-2 py-1">
-                  PNK Version 3.0 (2024)
-                </h1> */}
 
+              <Tab title="PNK v1" eventKey="v1">
                 <PnkTab
-                  title="PNK Version 3.0 (2024)"
-                  image={pnkv3Img}
-                  body={pnkv3Text}
-                  materials={pnkv3Materials}
-                ></PnkTab>
+                  title="PNK Version 1.0 (2017)"
+                  body={pnkv1Text}
+                  image={pnkv1Img}
+                  materials={pnkv1Materials}
+                />
               </Tab>
             </Tabs>
           </Col>
