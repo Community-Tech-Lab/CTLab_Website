@@ -14,11 +14,11 @@ const Footer = () => {
   return (
     <Container style={footerStyle} fluid className="py-2">
       <Row>
-        <Col xs={12} md={3}>
+        <Col xs={12} lg={3} className="my-2">
           <h2 className="footer-heading">Stewards Today, Leaders Tommorow</h2>
         </Col>
 
-        <Col xs={12} md={3}>
+        <Col xs={12} md={4} lg={3} className="my-2">
           <h3 className="footer-sub-heading">Community Tech NY</h3>
           <p className="space-grotesk-small white">
             email: info@communitytechny.org
@@ -31,7 +31,7 @@ const Footer = () => {
                 </Button>
               </Link>
             </Col>
-            <Col className="white" xs={2}>
+            <Col className="white" md={4} xs={2}>
               <Link to="https://twitter.com/commtechny">
                 <Button variant="link" className="px-0 py-1 white">
                   <CiTwitter className="logo" />{" "}
@@ -49,7 +49,7 @@ const Footer = () => {
           </Link>
         </Col>
 
-        <Col xs={12} md={3}>
+        <Col xs={12} md={4} lg={3} className="my-2">
           <h3 className="footer-sub-heading">El Puente</h3>
           <p className="space-grotesk-small white">email: info@elpuente.org</p>
           <p className="space-grotesk-small white">call: +1 (718) 387-0404</p>
@@ -66,7 +66,7 @@ const Footer = () => {
           </Link>
         </Col>
 
-        <Col xs={12} md={3}>
+        <Col xs={12} md={4} lg={3} className="my-2">
           <h3 className="footer-sub-heading">Come Visit the Lab!</h3>
           <p className="space-grotesk-small white">
             211 South 4th St, Brooklyn, NY 11211
