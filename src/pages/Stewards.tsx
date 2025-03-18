@@ -9,16 +9,16 @@ import TextImgBlock from "../components/TextImgBlock.tsx";
 //Image imports
 import logo from "../assets/PNK Logos/4.svg";
 import bannerPicture from "../assets/visit_banner.svg";
-import kcawImg from "../assets/Steward Photos/KCAW.jpeg";
+import kcawImg from "../assets/Steward Photos/KCAW.jpg";
 import theJoyProjImg from "../assets/Steward Photos/TheJoyProject.jpeg";
 import piperImg from "../assets/Steward Photos/Piper.jpeg";
-import rccImg from "../assets/Steward Photos/rrc.jpg";
-import endstateAtlImg from "../assets/Steward Photos/endstateATL.jpg";
-import IENimg from "../assets/Govinda.jpeg";
-import Bvlbancha from "../assets/bvlbancha.jpeg";
-import AC from "../assets/activationresidency.jpeg";
-import APRODEC from "../assets/LCAN-Manuel-crimping.jpg";
-import LCAN from "../assets/LCAN.jpg";
+import rccImg from "../assets/Steward Photos/RRC.jpeg";
+import endstateAtlImg from "../assets/Steward Photos/endstate.png";
+import IENimg from "../assets/Steward Photos/Govinda.jpeg";
+import Bvlbancha from "../assets/Steward Photos/bvlbancha.jpeg";
+import AC from "../assets/Steward Photos/activationresidency.jpeg";
+import APRODEC from "../assets/Steward Photos/aprodec.jpg";
+import LCAN from "../assets/Steward Photos/LCAN.jpg";
 import LS from "../assets/los_sures.svg";
 
 //hook imports
@@ -42,7 +42,7 @@ const Stewards = () => {
   }, []);
 
   const aboutUsText: string =
-    "Digital Stewards are a group of technologists that work in local neighborhoods to build wireless networks, and develop local applications their communities need to foster healthy relationships, build resilience, and increase access to critical information.";
+    "Digital Stewards are a group of technologists that work in local neighborhoods to build wireless networks, train community members and develop local applications their communities need to foster healthy relationships, build resilience, and increase access to critical information.";
   const kcawText: string =
     "KCAW is a community radio station located in sitka, alaska. KCAW provides essential information services such as Emergency Alert System and AMBER announcements and severe weather warnings, as well as local, regional, state, national and international news. As a member of CoastAlaska, it creates and archives stories of its community members as radio content for the station to broadcast.";
   const joyProjectText: string =
@@ -84,7 +84,7 @@ const Stewards = () => {
           />
         </Row>
         <Row>
-          <h1 className="main-heading">Discover Our Stewards</h1>
+          <h1 className="main-heading">Meet Our Stewards</h1>
         </Row>
         <Row>
           <StewardCard
@@ -92,7 +92,8 @@ const Stewards = () => {
             title="KCAW Raven Radio"
             bodyText={kcawText}
             image={kcawImg}
-            date="October 15th - 18th"
+            date="Trained from Oct 15th to 18th"
+            location="Sitka, Alaska"
           />
 
           <StewardCard
@@ -101,6 +102,7 @@ const Stewards = () => {
             image={theJoyProjImg}
             date="October 7th - 10th"
             link="https://www.joytheproject.com/"
+            location="Detroit, Michigan"
           />
 
           <StewardCard
@@ -109,6 +111,7 @@ const Stewards = () => {
             bodyText={detroitNetworkText}
             image={piperImg}
             link="http://dbcfsn.org/"
+            location="Detroit, Michigan"
           />
 
           <StewardCard
@@ -117,13 +120,15 @@ const Stewards = () => {
             bodyText={rrcText}
             image={rccImg}
             link="https://www.pitzer.edu/offices/redfordconservancy"
+            location="Clairemont, California"
           />
           <StewardCard
-            title="EndState ATL"
+            title="Endstate ATL"
             date="September 9th - 12th"
             bodyText={endstateText}
             image={endstateAtlImg}
             link="https://www.endstateatl.org/"
+            location="Atlanta, Georgia"
           />
           <StewardCard
             title="Indigenous Environmental Network"
@@ -131,6 +136,7 @@ const Stewards = () => {
             bodyText={ienText}
             image={IENimg}
             link="https://www.ienearth.org/"
+            location="Ukiah, California"
           />
           <StewardCard
             title="Bvlbancha Liberation Radio"
@@ -138,6 +144,7 @@ const Stewards = () => {
             bodyText={bvlbanchaText}
             image={Bvlbancha}
             link="http://www.bvlbancharadio.net/"
+            location="New Orleans, Louisiana"
           />
           <StewardCard
             title="Activation Residency"
@@ -145,13 +152,15 @@ const Stewards = () => {
             bodyText={acText}
             image={AC}
             link="http://activationresidency.com/"
+            location="Syracuse, New York"
           />
           <StewardCard
-            title="Aprodec Inc"
+            title="APRODEC Inc"
             date="May 6th - 10th"
             bodyText={aprodecText}
             image={APRODEC}
             link="http://aprodec.net/"
+            location="Ceiba, Puerto Rico"
           />
           <StewardCard
             title="Latino Climate Action Network"
@@ -159,13 +168,15 @@ const Stewards = () => {
             bodyText={LCANText}
             image={LCAN}
             link="https://www.cakex.org/community/directory/organizations/latino-climate-action-network-lcanx"
+            location="San Juan, Puerto Rico"
           />
           <StewardCard
-            title="Los Sures"
+            title="Los Sures United HDFC"
             date="April 29th - May 2nd"
             bodyText={LSText}
             image={LS}
             link="https://www.southsideunitedhdfc.org/about-us/mission-history/"
+            location="Brooklyn, New York"
           />
         </Row>
       </Container>

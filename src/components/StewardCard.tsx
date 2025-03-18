@@ -10,9 +10,17 @@ interface Props {
   bodyText: string;
   date: string;
   link: string;
+  location: string;
 }
 
-const StewardCard = ({ title, image, bodyText, date, link }: Props) => {
+const StewardCard = ({
+  title,
+  image,
+  bodyText,
+  date,
+  link,
+  location,
+}: Props) => {
   const cardStyle: React.CSSProperties = {
     textWrap: "wrap",
     display: "flex",
@@ -33,7 +41,9 @@ const StewardCard = ({ title, image, bodyText, date, link }: Props) => {
         <h1 className="sub-heading">{title}</h1>
       </Link>
 
-      <h2>{date}</h2>
+      <h3>{location}</h3>
+
+      <h5>{date}</h5>
       <p
         style={{
           textAlign: "justify",
