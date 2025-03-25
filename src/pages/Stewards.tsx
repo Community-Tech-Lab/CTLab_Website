@@ -56,7 +56,7 @@ const Stewards = () => {
   const ienText: string =
     "The Indigenous Environmental Network (IEN) is an alliance dedicated to protecting the sacredness of Earth through Indigenous knowledge and natural law. Its campaigns include fighting fossil fuel expansion, promoting a just transition to renewable energy, and addressing climate policy failures. IEN emphasizes the integration of traditional wisdom and sustainable practices to create systemic change.";
   const bvlbanchaText: string =
-    "Bvlbancha Liberation Radio is an Indigenous-led multimedia platform based in New Orleans, focusing on Gulf South Native identity, environmental activism, and community empowerment. The station integrates education about historical earthwork architecture and the effects of climate change on Louisiana. Bvlbancha Liberation Radio fosters dialogue with Indigenous scholars and artists while supporting mutual aid and community-led communications initiatives. ";
+    "SwampNet is a collaborative project that started in 2023 with the goal of bringing alternative and autonomous communication systems to Bvlbancha, New Orleans and across the Gulf South. The project focuses on supporting mutual aid distribution and community-based endeavors, particularly during emergencies and periods of uncertainty. It also aims to explore the relationships between data, place, and memory, while reimagining interactions with communication and digital technologies beyond capitalist and extractive frameworks. ";
   const acText: string =
     "Activation Residency is a Black trans-led artist residency in Syracuse, NY, founded in 2018. It focuses on creating safer, collaborative spaces tailored to residents' needs, fostering healing, wellness, and artistic expression. The program envisions transformative futures and offers a supportive environment for marginalized creatives. ";
   const aprodecText: string =
@@ -92,7 +92,7 @@ const Stewards = () => {
             title="KCAW Raven Radio"
             bodyText={kcawText}
             image={kcawImg}
-            date="Trained from Oct 15th to 18th"
+            // date="Trained from Oct 15th to 18th"
             location="Sitka, Alaska"
           />
 
@@ -100,14 +100,14 @@ const Stewards = () => {
             title="The Joy Project"
             bodyText={joyProjectText}
             image={theJoyProjImg}
-            date="October 7th - 10th"
+            // date="October 7th - 10th"
             link="https://www.joytheproject.com/"
             location="Detroit, Michigan"
           />
 
           <StewardCard
             title="Detroit Black Food Sovereignty Network"
-            date="October 7th - 10th"
+            // date="October 7th - 10th"
             bodyText={detroitNetworkText}
             image={piperImg}
             link="http://dbcfsn.org/"
@@ -116,15 +116,15 @@ const Stewards = () => {
 
           <StewardCard
             title="Robert Redford Conservancy"
-            date="September 23rd - 26th"
+            // date="September 23rd - 26th"
             bodyText={rrcText}
             image={rccImg}
             link="https://www.pitzer.edu/offices/redfordconservancy"
-            location="Clairemont, California"
+            location="Claremont, California"
           />
           <StewardCard
-            title="Endstate ATL"
-            date="September 9th - 12th"
+            title="EndstateATL"
+            // date="September 9th - 12th"
             bodyText={endstateText}
             image={endstateAtlImg}
             link="https://www.endstateatl.org/"
@@ -132,23 +132,23 @@ const Stewards = () => {
           />
           <StewardCard
             title="Indigenous Environmental Network"
-            date="June 24th - 27th"
+            // date="June 24th - 27th"
             bodyText={ienText}
             image={IENimg}
             link="https://www.ienearth.org/"
             location="Ukiah, California"
           />
           <StewardCard
-            title="Bvlbancha Liberation Radio"
-            date="June 24th - 27th"
+            title="SwampNet"
+            // date="June 24th - 27th"
             bodyText={bvlbanchaText}
             image={Bvlbancha}
-            link="http://www.bvlbancharadio.net/"
+            link="https://swampnet.info/"
             location="New Orleans, Louisiana"
           />
           <StewardCard
             title="Activation Residency"
-            date="June 17th - 20th"
+            // date="June 17th - 20th"
             bodyText={acText}
             image={AC}
             link="http://activationresidency.com/"
@@ -156,7 +156,7 @@ const Stewards = () => {
           />
           <StewardCard
             title="APRODEC Inc"
-            date="May 6th - 10th"
+            // date="May 6th - 10th"
             bodyText={aprodecText}
             image={APRODEC}
             link="http://aprodec.net/"
@@ -164,7 +164,7 @@ const Stewards = () => {
           />
           <StewardCard
             title="Latino Climate Action Network"
-            date="May 6th - 10th"
+            // date="May 6th - 10th"
             bodyText={LCANText}
             image={LCAN}
             link="https://www.cakex.org/community/directory/organizations/latino-climate-action-network-lcanx"
@@ -172,7 +172,7 @@ const Stewards = () => {
           />
           <StewardCard
             title="Los Sures United HDFC"
-            date="April 29th - May 2nd"
+            // date="April 29th - May 2nd"
             bodyText={LSText}
             image={LS}
             link="https://www.southsideunitedhdfc.org/about-us/mission-history/"

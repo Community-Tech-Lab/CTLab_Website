@@ -8,7 +8,7 @@ interface Props {
   title: string;
   image: string;
   bodyText: string;
-  date: string;
+  date?: string;
   link: string;
   location: string;
 }
