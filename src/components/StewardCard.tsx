@@ -9,7 +9,7 @@ interface Props {
   image: string;
   bodyText: string;
   date?: string;
-  link: string;
+  link?: string;
   location: string;
 }
 
@@ -33,7 +33,7 @@ const StewardCard = ({
     <Col className="space-grotesk-small" style={cardStyle} xs={12} lg={4}>
       <Image src={image} fluid className="py-3" />
       <Link
-        to={link}
+        to={link ?? "#"}
         style={{
           textDecoration: "none",
         }}

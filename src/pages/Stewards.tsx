@@ -20,6 +20,7 @@ import AC from "../assets/Steward Photos/activationresidency.jpeg";
 import APRODEC from "../assets/Steward Photos/aprodec.jpg";
 import LCAN from "../assets/Steward Photos/LCAN.jpg";
 import LS from "../assets/los_sures.svg";
+import codeswitch from "../assets/c0deswitch.jpg";
 
 //hook imports
 import { useEffect, useState } from "react";
@@ -65,6 +66,8 @@ const Stewards = () => {
     "The Latino Climate Action Network (LCAN), launched by El Puente, is dedicated to environmental justice with a focus on Latino and Puerto Rican communities. Established in 2013, it organizes leadership summits to address climate change mitigation, adaptation, and resiliency. Inspired by El Puente’s 'Green Light District' initiative, LCAN aims to empower leaders and develop strategic plans for climate action. It fosters collaboration across sectors, advocating for policies that support both Puerto Rico and Latino communities in the U.S. ";
   const LSText: string =
     "Los Sures is a community-based organization in Williamsburg, Brooklyn, dedicated to preserving affordable housing, supporting family well-being, and fostering neighborhood diversity. Founded in 1972, it addresses housing issues, advocates for tenants, and provides resources such as a food pantry, hydroponic farm, senior centers, and community outreach programs. Los Sures has played a pioneering role in managing and rehabilitating city-owned properties, promoting housing equity in the face of gentrification. ";
+  const c0deswitchtext: string =
+    "A group of young, visionary activists based in Atlanta who are reimagining the relationship between technology and power. With a deep commitment to social justice, they aim to transform traditional power structures by building alternative tech infrastructures that center the needs of marginalized communities. C0de switch uses open-source tools to develop decentralized, community-controlled digital systems and creates spaces where activism can thrive sustainably and safely in the digital world. ";
   return (
     <>
       <Banner
@@ -177,6 +180,13 @@ const Stewards = () => {
             image={LS}
             link="https://www.southsideunitedhdfc.org/about-us/mission-history/"
             location="Brooklyn, New York"
+          />
+          <StewardCard
+            title="C0de Switch"
+            // date="April 13th - April 16th"
+            bodyText={c0deswitchtext}
+            image={codeswitch}
+            location="Atlanta, Georgia"
           />
         </Row>
       </Container>
