@@ -102,7 +102,7 @@ const Stewards = () => {
             title="KCAW Raven Radio"
             bodyText={kcawText}
             image={kcawImg}
-            date="Trained on Oct 15th to 18th, 2024"
+            date="Trained on Oct 15th - 18th, 2024"
             location="Sitka, Alaska"
           />
 
