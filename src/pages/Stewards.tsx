@@ -91,11 +91,18 @@ const Stewards = () => {
         </Row>
         <Row>
           <StewardCard
+            title="c0de switch"
+            date="Trained on April 13th - April 16th, 2025"
+            bodyText={c0deswitchtext}
+            image={codeswitch}
+            location="Atlanta, Georgia"
+          />
+          <StewardCard
             link="https://www.kcaw.org/"
             title="KCAW Raven Radio"
             bodyText={kcawText}
             image={kcawImg}
-            // date="Trained from Oct 15th to 18th"
+            date="Trained on Oct 15th to 18th, 2024"
             location="Sitka, Alaska"
           />
 
@@ -103,14 +110,14 @@ const Stewards = () => {
             title="The Joy Project"
             bodyText={joyProjectText}
             image={theJoyProjImg}
-            // date="October 7th - 10th"
+            date="Trained on October 7th - 10th, 2024"
             link="https://www.joytheproject.com/"
             location="Detroit, Michigan"
           />
 
           <StewardCard
             title="Detroit Black Food Sovereignty Network"
-            // date="October 7th - 10th"
+            date="Trained on October 7th - 10th, 2024"
             bodyText={detroitNetworkText}
             image={piperImg}
             link="http://dbcfsn.org/"
@@ -119,7 +126,7 @@ const Stewards = () => {
 
           <StewardCard
             title="Robert Redford Conservancy"
-            // date="September 23rd - 26th"
+            date="Trained on September 23rd - 26th, 2024"
             bodyText={rrcText}
             image={rccImg}
             link="https://www.pitzer.edu/offices/redfordconservancy"
@@ -127,7 +134,7 @@ const Stewards = () => {
           />
           <StewardCard
             title="EndstateATL"
-            // date="September 9th - 12th"
+            date="Trained on September 9th - 12th, 2024"
             bodyText={endstateText}
             image={endstateAtlImg}
             link="https://www.endstateatl.org/"
@@ -135,7 +142,7 @@ const Stewards = () => {
           />
           <StewardCard
             title="Indigenous Environmental Network"
-            // date="June 24th - 27th"
+            date="Trained on June 24th - 27th, 2024"
             bodyText={ienText}
             image={IENimg}
             link="https://www.ienearth.org/"
@@ -143,7 +150,7 @@ const Stewards = () => {
           />
           <StewardCard
             title="SwampNet"
-            // date="June 24th - 27th"
+            date="Trained on June 24th - 27th, 2024"
             bodyText={bvlbanchaText}
             image={Bvlbancha}
             link="https://swampnet.info/"
@@ -151,7 +158,7 @@ const Stewards = () => {
           />
           <StewardCard
             title="Activation Residency"
-            // date="June 17th - 20th"
+            date="Trained on June 17th - 20th, 2024"
             bodyText={acText}
             image={AC}
             link="http://activationresidency.com/"
@@ -159,7 +166,7 @@ const Stewards = () => {
           />
           <StewardCard
             title="APRODEC Inc"
-            // date="May 6th - 10th"
+            date="Trained on May 6th - 10th, 2024"
             bodyText={aprodecText}
             image={APRODEC}
             link="http://aprodec.net/"
@@ -167,7 +174,7 @@ const Stewards = () => {
           />
           <StewardCard
             title="Latino Climate Action Network"
-            // date="May 6th - 10th"
+            date="Trained on May 6th - 10th, 2024"
             bodyText={LCANText}
             image={LCAN}
             link="https://www.cakex.org/community/directory/organizations/latino-climate-action-network-lcanx"
@@ -175,18 +182,11 @@ const Stewards = () => {
           />
           <StewardCard
             title="Los Sures United HDFC"
-            // date="April 29th - May 2nd"
+            date="Trained on April 29th - May 2nd, 2024"
             bodyText={LSText}
             image={LS}
             link="https://www.southsideunitedhdfc.org/about-us/mission-history/"
             location="Brooklyn, New York"
-          />
-          <StewardCard
-            title="c0de switch"
-            // date="April 13th - April 16th"
-            bodyText={c0deswitchtext}
-            image={codeswitch}
-            location="Atlanta, Georgia"
           />
         </Row>
       </Container>
