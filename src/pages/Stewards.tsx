@@ -29,7 +29,7 @@ import Footer from "../components/Footer.tsx";
 const Stewards = () => {
   //hooks
   const [isMobile, setIsMobile] = useState<boolean>(
-    window.matchMedia("(max-width: 768px").matches
+    window.matchMedia("(max-width: 768px").matches,
   );
 
   useEffect(() => {
@@ -69,130 +69,129 @@ const Stewards = () => {
   const c0deswitchtext: string =
     "c0de switch is a group of young, visionary activists based in Atlanta who are reimagining the relationship between technology and power. With a deep commitment to social justice, they aim to transform traditional power structures by building alternative tech infrastructures that center the needs of marginalized communities. c0de switch uses open-source tools to develop decentralized, community-controlled digital systems and creates spaces where activism can thrive sustainably and safely in the digital world. ";
   return (
-    // <>
-    //   <Banner
-    //     bannerText="The Future of Community-Owned Networks"
-    //     bannerColor="red"
-    //     image={bannerPicture}
-    //     isMobile={isMobile}
-    //   />
-    //   <Menu />
-    //   <Container>
-    //     <Row>
-    //       <TextImgBlock
-    //         flip={false}
-    //         image={logo}
-    //         bodyText={aboutUsText}
-    //         title="What are Digital Stewards?"
-    //       />
-    //     </Row>
-    //     <Row>
-    //       <h1 className="main-heading">Meet Our Stewards</h1>
-    //     </Row>
-    //     <Row>
-    //       <StewardCard
-    //         title="c0de switch"
-    //         date="Trained on April 13th - April 16th, 2025"
-    //         bodyText={c0deswitchtext}
-    //         image={codeswitch}
-    //         location="Atlanta, Georgia"
-    //       />
-    //       <StewardCard
-    //         link="https://www.kcaw.org/"
-    //         title="KCAW Raven Radio"
-    //         bodyText={kcawText}
-    //         image={kcawImg}
-    //         date="Trained on Oct 15th - 18th, 2024"
-    //         location="Sitka, Alaska"
-    //       />
+    <>
+      <Banner
+        bannerText="The Future of Community-Owned Networks"
+        bannerColor="red"
+        image={bannerPicture}
+        isMobile={isMobile}
+      />
+      <Menu />
+      <Container>
+        <Row>
+          <TextImgBlock
+            flip={false}
+            image={logo}
+            bodyText={aboutUsText}
+            title="What are Digital Stewards?"
+          />
+        </Row>
+        <Row>
+          <h1 className="main-heading">Meet Our Stewards</h1>
+        </Row>
+        <Row>
+          <StewardCard
+            title="c0de switch"
+            date="Trained on April 13th - April 16th, 2025"
+            bodyText={c0deswitchtext}
+            image={codeswitch}
+            location="Atlanta, Georgia"
+          />
+          <StewardCard
+            link="https://www.kcaw.org/"
+            title="KCAW Raven Radio"
+            bodyText={kcawText}
+            image={kcawImg}
+            date="Trained on Oct 15th - 18th, 2024"
+            location="Sitka, Alaska"
+          />
 
-    //       <StewardCard
-    //         title="The Joy Project"
-    //         bodyText={joyProjectText}
-    //         image={theJoyProjImg}
-    //         date="Trained on October 7th - 10th, 2024"
-    //         link="https://www.joytheproject.com/"
-    //         location="Detroit, Michigan"
-    //       />
+          <StewardCard
+            title="The Joy Project"
+            bodyText={joyProjectText}
+            image={theJoyProjImg}
+            date="Trained on October 7th - 10th, 2024"
+            link="https://www.joytheproject.com/"
+            location="Detroit, Michigan"
+          />
 
-    //       <StewardCard
-    //         title="Detroit Black Food Sovereignty Network"
-    //         date="Trained on October 7th - 10th, 2024"
-    //         bodyText={detroitNetworkText}
-    //         image={piperImg}
-    //         link="http://dbcfsn.org/"
-    //         location="Detroit, Michigan"
-    //       />
+          <StewardCard
+            title="Detroit Black Food Sovereignty Network"
+            date="Trained on October 7th - 10th, 2024"
+            bodyText={detroitNetworkText}
+            image={piperImg}
+            link="http://dbcfsn.org/"
+            location="Detroit, Michigan"
+          />
 
-    //       <StewardCard
-    //         title="Robert Redford Conservancy"
-    //         date="Trained on September 23rd - 26th, 2024"
-    //         bodyText={rrcText}
-    //         image={rccImg}
-    //         link="https://www.pitzer.edu/offices/redfordconservancy"
-    //         location="Claremont, California"
-    //       />
-    //       <StewardCard
-    //         title="EndstateATL"
-    //         date="Trained on September 9th - 12th, 2024"
-    //         bodyText={endstateText}
-    //         image={endstateAtlImg}
-    //         link="https://www.endstateatl.org/"
-    //         location="Atlanta, Georgia"
-    //       />
-    //       <StewardCard
-    //         title="Indigenous Environmental Network"
-    //         date="Trained on June 24th - 27th, 2024"
-    //         bodyText={ienText}
-    //         image={IENimg}
-    //         link="https://www.ienearth.org/"
-    //         location="Ukiah, California"
-    //       />
-    //       <StewardCard
-    //         title="SwampNet"
-    //         date="Trained on June 24th - 27th, 2024"
-    //         bodyText={bvlbanchaText}
-    //         image={Bvlbancha}
-    //         link="https://swampnet.info/"
-    //         location="New Orleans, Louisiana"
-    //       />
-    //       <StewardCard
-    //         title="Activation Residency"
-    //         date="Trained on June 17th - 20th, 2024"
-    //         bodyText={acText}
-    //         image={AC}
-    //         link="http://activationresidency.com/"
-    //         location="Syracuse, New York"
-    //       />
-    //       <StewardCard
-    //         title="APRODEC Inc"
-    //         date="Trained on May 6th - 10th, 2024"
-    //         bodyText={aprodecText}
-    //         image={APRODEC}
-    //         link="http://aprodec.net/"
-    //         location="Ceiba, Puerto Rico"
-    //       />
-    //       <StewardCard
-    //         title="Latino Climate Action Network"
-    //         date="Trained on May 6th - 10th, 2024"
-    //         bodyText={LCANText}
-    //         image={LCAN}
-    //         link="https://www.cakex.org/community/directory/organizations/latino-climate-action-network-lcanx"
-    //         location="San Juan, Puerto Rico"
-    //       />
-    //       <StewardCard
-    //         title="Los Sures United HDFC"
-    //         date="Trained on April 29th - May 2nd, 2024"
-    //         bodyText={LSText}
-    //         image={LS}
-    //         link="https://www.southsideunitedhdfc.org/about-us/mission-history/"
-    //         location="Brooklyn, New York"
-    //       />
-    //     </Row>
-    //   </Container>
-    //   <Footer />
-    // </>
-    <></>
+          <StewardCard
+            title="Robert Redford Conservancy"
+            date="Trained on September 23rd - 26th, 2024"
+            bodyText={rrcText}
+            image={rccImg}
+            link="https://www.pitzer.edu/offices/redfordconservancy"
+            location="Claremont, California"
+          />
+          <StewardCard
+            title="EndstateATL"
+            date="Trained on September 9th - 12th, 2024"
+            bodyText={endstateText}
+            image={endstateAtlImg}
+            link="https://www.endstateatl.org/"
+            location="Atlanta, Georgia"
+          />
+          <StewardCard
+            title="Indigenous Environmental Network"
+            date="Trained on June 24th - 27th, 2024"
+            bodyText={ienText}
+            image={IENimg}
+            link="https://www.ienearth.org/"
+            location="Ukiah, California"
+          />
+          <StewardCard
+            title="SwampNet"
+            date="Trained on June 24th - 27th, 2024"
+            bodyText={bvlbanchaText}
+            image={Bvlbancha}
+            link="https://swampnet.info/"
+            location="New Orleans, Louisiana"
+          />
+          <StewardCard
+            title="Activation Residency"
+            date="Trained on June 17th - 20th, 2024"
+            bodyText={acText}
+            image={AC}
+            link="http://activationresidency.com/"
+            location="Syracuse, New York"
+          />
+          <StewardCard
+            title="APRODEC Inc"
+            date="Trained on May 6th - 10th, 2024"
+            bodyText={aprodecText}
+            image={APRODEC}
+            link="http://aprodec.net/"
+            location="Ceiba, Puerto Rico"
+          />
+          <StewardCard
+            title="Latino Climate Action Network"
+            date="Trained on May 6th - 10th, 2024"
+            bodyText={LCANText}
+            image={LCAN}
+            link="https://www.cakex.org/community/directory/organizations/latino-climate-action-network-lcanx"
+            location="San Juan, Puerto Rico"
+          />
+          <StewardCard
+            title="Los Sures United HDFC"
+            date="Trained on April 29th - May 2nd, 2024"
+            bodyText={LSText}
+            image={LS}
+            link="https://www.southsideunitedhdfc.org/about-us/mission-history/"
+            location="Brooklyn, New York"
+          />
+        </Row>
+      </Container>
+      <Footer />
+    </>
   );
 };
 
