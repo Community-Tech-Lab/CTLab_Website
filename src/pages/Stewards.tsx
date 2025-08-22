@@ -23,7 +23,7 @@ import IsocStewards from "../Data.ts";
 const Stewards = () => {
   //hooks
   const [isMobile, setIsMobile] = useState<boolean>(
-    window.matchMedia("(max-width: 768px").matches,
+    window.matchMedia("(max-width: 768px").matches
   );
 
   useEffect(() => {
@@ -38,6 +38,7 @@ const Stewards = () => {
 
   return (
     <>
+      <Menu />
       <Banner
         bannerText="Our Digital Stewards"
         bannerColor="red"
@@ -70,7 +71,15 @@ const Stewards = () => {
           <CurriculumCard title="Web Development" image="" bodyText="" />
           <CurriculumCard title="Community Outreach" image="" bodyText="" />
         </Row>
+
+        <Row>
+          {IsocStewards.map((steward, index) => (
+            <StewardCard steward={steward} key={index} />
+          ))}
+        </Row>
+   
       </Container>
+           <Footer />
     </>
   );
 };
