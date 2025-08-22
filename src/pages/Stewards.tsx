@@ -11,6 +11,7 @@ import logo from "../assets/PNK Logos/4.svg";
 import bannerPicture from "../assets/visit_banner.svg";
 import Networking from "../assets/cablecrimping.png";
 import WebDev from "../assets/WebDev.png";
+import CommunityOutreach from "../assets/CommunityOutreach.png";
 
 //hook imports
 import { useEffect, useState } from "react";
@@ -62,13 +63,25 @@ const Stewards = () => {
           <CurriculumCard
             title="Networking"
             image={Networking}
-            bodyText="Topics Covered include but are not limited to
-          Wireless Antenna Configuration
-          Router Configuration
-          Linux Protocols"
+            bodyText="Topics covered include but are not limited to:"
+            listedItems={["Foo", "Bar", "Something"]}
           />
-          <CurriculumCard title="Web Development" image="" bodyText="" />
-          <CurriculumCard title="Community Outreach" image="" bodyText="" />
+          <CurriculumCard
+            title="Web Development"
+            image={WebDev}
+            bodyText="We encourage our stewards to also be builders. Covering skills such as
+          Local Server Hosting
+          HTML, CSS, JS
+          React.js"
+          />
+          <CurriculumCard
+            title="Community Outreach"
+            image={CommunityOutreach}
+            bodyText="Embodying the Train the trainer model, we also Train our stewards in
+          Digital Justice Principles
+          Community organization
+          Workshop facilitation"
+          />
         </Row>
       </Container>
     </>
