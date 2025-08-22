@@ -1,15 +1,15 @@
-import kcawImg from "../assets/Steward Photos/KCAW.jpg";
-import theJoyProjImg from "../assets/Steward Photos/TheJoyProject.jpeg";
-import DBFSNImg from "../assets/Steward Photos/Piper.jpeg";
-import rrcImg from "../assets/Steward Photos/RRC.jpeg";
-import endstateAtlImg from "../assets/Steward Photos/endstate.png";
-import ienImg from "../assets/Steward Photos/Govinda.jpeg";
-import bvlbanchaImg from "../assets/Steward Photos/bvlbancha.jpeg";
-import acImg from "../assets/Steward Photos/activationresidency.jpeg";
-import aprodecImg from "../assets/Steward Photos/aprodec.jpg";
-import lcanImg from "../assets/Steward Photos/LCAN.jpg";
-import lsImg from "../assets/los_sures.svg";
-import codeswitch from "../assets/c0deswitch.png";
+import kcawImg from "./assets/Steward Photos/KCAW.jpg";
+import theJoyProjImg from "./assets/Steward Photos/TheJoyProject.jpeg";
+import DBFSNImg from "./assets/Steward Photos/Piper.jpeg";
+import rrcImg from "./assets/Steward Photos/RRC.jpeg";
+import endstateAtlImg from "./assets/Steward Photos/endstate.png";
+import ienImg from "./assets/Steward Photos/Govinda.jpeg";
+import bvlbanchaImg from "./assets/Steward Photos/bvlbancha.jpeg";
+import acImg from "./assets/Steward Photos/activationresidency.jpeg";
+import aprodecImg from "./assets/Steward Photos/aprodec.jpg";
+import lcanImg from "./assets/Steward Photos/LCAN.jpg";
+import lsImg from "./assets/los_sures.svg";
+import codeswitch from "./assets/c0deswitch.png";
 
 const IsocStewards: Steward[] = [
   {

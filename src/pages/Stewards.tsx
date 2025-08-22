@@ -17,10 +17,13 @@ import { useEffect, useState } from "react";
 import Footer from "../components/Footer.tsx";
 import CurriculumCard from "../components/CurriculumCard.tsx";
 
+//Other imports
+import IsocStewards from "../Data.ts";
+
 const Stewards = () => {
   //hooks
   const [isMobile, setIsMobile] = useState<boolean>(
-    window.matchMedia("(max-width: 768px").matches
+    window.matchMedia("(max-width: 768px").matches,
   );
 
   useEffect(() => {
