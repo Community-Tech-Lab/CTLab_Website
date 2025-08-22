@@ -6,9 +6,10 @@ interface Props {
   title: string;
   image: string;
   bodyText: string;
+  listedItems: string[];
 }
 
-const CurriculumCard = ({ title, image, bodyText }: Props) => {
+const CurriculumCard = ({ title, image, bodyText, listedItems }: Props) => {
   const cardStyle: React.CSSProperties = {
     textWrap: "wrap",
     display: "flex",
@@ -20,6 +21,7 @@ const CurriculumCard = ({ title, image, bodyText }: Props) => {
     <Col>
       <h2>{title}</h2>
       <img src={image}></img>
+      <p>{bodyText}</p>
     </Col>
   );
 };
