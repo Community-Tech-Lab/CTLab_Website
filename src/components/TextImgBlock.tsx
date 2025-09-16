@@ -63,7 +63,7 @@ const TextImgBlock = ({ bodyText, image, title, flip, button }: Props) => {
               }}
               className={
                 title
-                  ? "space-grotesk-small p-3"
+                  ? "space-grotesk p-3"
                   : "space-grotesk boxxed-text p-3"
               }
             >

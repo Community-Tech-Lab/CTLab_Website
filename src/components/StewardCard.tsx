@@ -18,7 +18,7 @@ const StewardCard = ({steward}: Props) => {
   };
 
   return (
-    <Col className="space-grotesk-small" style={cardStyle} xs={12} lg={4}>
+    <Col className="space-grotesk" style={cardStyle} xs={12} lg={4}>
       <Image src={steward.image} fluid className="py-3" />
       <Link
         to={steward.link ?? "#"}

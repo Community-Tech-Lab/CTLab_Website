@@ -20,7 +20,7 @@ const Footer = () => {
 
         <Col xs={12} md={4} lg={3} className="my-2">
           <h3 className="footer-sub-heading">Community Tech NY</h3>
-          <p className="space-grotesk-small white">
+          <p className="space-grotesk white">
             email: info@communitytechny.org
           </p>
           <Row>
@@ -41,7 +41,7 @@ const Footer = () => {
           </Row>
           <Link to="https://communitytechny.org">
             <Button
-              className="px-0 py-3 space-grotesk-small white"
+              className="px-0 py-3 space-grotesk white"
               variant="link"
             >
               View Website <GoLinkExternal />
@@ -51,9 +51,9 @@ const Footer = () => {
 
         <Col xs={12} md={4} lg={3} className="my-2">
           <h3 className="footer-sub-heading">El Puente</h3>
-          <p className="space-grotesk-small white">email: info@elpuente.org</p>
-          <p className="space-grotesk-small white">call: +1 (718) 387-0404</p>
-          <p className="space-grotesk-small white">
+          <p className="space-grotesk white">email: info@elpuente.org</p>
+          <p className="space-grotesk white">call: +1 (718) 387-0404</p>
+          <p className="space-grotesk white">
             211 South 4th St, Brooklyn, NY 11211
           </p>
           <Link to="https://elpuente.org">
@@ -68,12 +68,12 @@ const Footer = () => {
 
         <Col xs={12} md={4} lg={3} className="my-2">
           <h3 className="footer-sub-heading">Come Visit the Lab!</h3>
-          <p className="space-grotesk-small white">
+          <p className="space-grotesk white">
             211 South 4th St, Brooklyn, NY 11211
           </p>
           <Link to="https://maps.app.goo.gl/oY2DLpA937ruiMcL6">
             <Button
-              className="px-0 py-3 space-grotesk-small white"
+              className="px-0 py-3 space-grotesk white"
               variant="link"
             >
               View Map <GoLinkExternal />
