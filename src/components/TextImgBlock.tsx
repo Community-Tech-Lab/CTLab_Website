@@ -1,7 +1,6 @@
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
@@ -24,13 +23,13 @@ const TextImgBlock = ({ bodyText, image, title, flip, button }: Props) => {
     <Col xs={12} className="my-3">
       <Container>
         <Row>
-          {image ?? (
+          {image ? (
             <Col
               xs={12}
               md={4}
               className="d-flex justify-content-center flex-column align-items-left"
             >
-              {image ?? <Image fluid src={image} rounded />}
+              <img src={image}></img>
               {button ? (
                 <Link to={button ? button.link : "/"}>
                   <Button
@@ -42,6 +41,8 @@ const TextImgBlock = ({ bodyText, image, title, flip, button }: Props) => {
                 </Link>
               ) : null}
             </Col>
+          ) : (
+            <></>
           )}
           <Col
             md={{ order: flip ? "first" : "last", span: image ? 8 : 12 }}

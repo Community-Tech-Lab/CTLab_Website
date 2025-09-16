@@ -7,7 +7,6 @@ import StewardCard from "../components/StewardCard.tsx";
 import TextImgBlock from "../components/TextImgBlock.tsx";
 
 //Image imports
-import logo from "../assets/PNK Logos/4.svg";
 import bannerPicture from "../assets/visit_banner.svg";
 import Networking from "../assets/cablecrimping.png";
 import WebDev from "../assets/WebDev.png";

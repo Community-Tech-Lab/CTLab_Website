@@ -1,7 +1,7 @@
 //image imports
 import home_banner from "./assets/lab_photo.svg";
 import nyuStewards from "./assets/nyu_stewards.svg";
-import antenna_logo from "./assets/PNK Logos/1.svg";
+import antenna_logo from "./assets/PNK_Logos/antenna.svg";
 import teachingKits from "./assets/PNK_teaching_kits.svg";
 import pnkImg from "./assets/pnkimage_2.svg";
 //component imports
@@ -25,7 +25,7 @@ interface bttnProps {
 function App() {
   //hooks
   const [isMobile, setIsMobile] = useState<boolean>(
-    window.matchMedia("(max-width: 768px").matches,
+    window.matchMedia("(max-width: 768px").matches
   );
 
   useEffect(() => {
