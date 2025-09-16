@@ -64,7 +64,7 @@ const ColoredTextBanner = ({
                       <Image src={image1} fluid className="rounded-4 my-1" />
                     </Col>
                     <Col xs={12} lg={6}>
-                      <p className="space-grotesk-small">{bodyText}</p>
+                      <p className="space-grotesk">{bodyText}</p>
                       <Link to={button ? button.link : "/"}>
                         <Button
                           className="space-grotesk-small my-2"

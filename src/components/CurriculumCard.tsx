@@ -1,6 +1,4 @@
 import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
-import { Link } from "react-router-dom";
 
 interface Props {
   title: string;
@@ -10,25 +8,17 @@ interface Props {
 }
 
 const CurriculumCard = ({ title, image, bodyText, listedItems }: Props) => {
-  /*this is a set of css propertie that may or may not be relevant to the final design */
-
-  // const cardStyle: React.CSSProperties = {
-  //   textWrap: "wrap",
-  //   display: "flex",
-  //   flexFlow: "column",
-  //   justifyContent: "center",
-  //   height: "100%",
-  // };
-
   return (
-    <Col>
-      <h2>{title}</h2>
-      <img src={image}></img>
+    <Col className="space-grotesk">
+      <h2 className="curriculum-heading  ">{title}</h2>
+      <img style={{
+        width: "100%"
+      }}src={image}></img>
       <p>{bodyText}</p>
 
       <ul>
         {listedItems?.map((item, key) => (
-          <ul key={key}>{item}</ul>
+          <li key={key}>{item}</li>
         ))}
       </ul>
     </Col>
@@ -36,18 +26,3 @@ const CurriculumCard = ({ title, image, bodyText, listedItems }: Props) => {
 };
 
 export default CurriculumCard;
-
-// const StewardCard = ({
-//   title,
-//   image,
-//   bodyText,
-// }
-
-// }: Props) => {
-//   const cardStyle: React.CSSProperties = {
-//     textWrap: "wrap",
-//     display: "flex",
-//     flexFlow: "column",
-//     justifyContent: "center",
-//     height: "100%",
-//   };
