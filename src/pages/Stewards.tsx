@@ -7,7 +7,6 @@ import StewardCard from "../components/StewardCard.tsx";
 import TextImgBlock from "../components/TextImgBlock.tsx";
 
 //Image imports
-import logo from "../assets/PNK Logos/4.svg";
 import bannerPicture from "../assets/visit_banner.svg";
 import Networking from "../assets/cablecrimping.png";
 import WebDev from "../assets/WebDev.png";
@@ -25,7 +24,7 @@ import IsocStewards from "../Data.ts";
 const Stewards = () => {
   //hooks
   const [isMobile, setIsMobile] = useState<boolean>(
-    window.matchMedia("(max-width: 768px").matches,
+    window.matchMedia("(max-width: 768px").matches
   );
 
   useEffect(() => {
@@ -84,7 +83,15 @@ const Stewards = () => {
           Workshop facilitation"
           />
         </Row>
+
+        <Row>
+          {IsocStewards.map((steward, index) => (
+            <StewardCard steward={steward} key={index} />
+          ))}
+        </Row>
+   
       </Container>
+<<<<<<< HEAD
 
       <Container>
         <TextImageBlock
@@ -93,6 +100,9 @@ const Stewards = () => {
           bodyText="We make a great effort to engage with our local community as much as possible. Each cohort works towards planning a community event known as a Discovery of tech event, otherwise known as a discotech. allowing for our stewards to directly  communicate with community members on Digital equity issues and technology that could be used to address those issues."
         />
       </Container>
+=======
+           <Footer />
+>>>>>>> 166dd4e926b094b15115d5698f8123fe582d6d9b
     </>
   );
 };

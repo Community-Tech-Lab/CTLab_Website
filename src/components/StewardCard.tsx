@@ -5,22 +5,10 @@ import Image from "react-bootstrap/Image";
 import { Link } from "react-router-dom";
 
 interface Props {
-  title: string;
-  image: string;
-  bodyText: string;
-  date?: string;
-  link?: string;
-  location: string;
+  steward: Steward;
 }
 
-const StewardCard = ({
-  title,
-  image,
-  bodyText,
-  date,
-  link,
-  location,
-}: Props) => {
+const StewardCard = ({steward}: Props) => {
   const cardStyle: React.CSSProperties = {
     textWrap: "wrap",
     display: "flex",
@@ -31,25 +19,25 @@ const StewardCard = ({
 
   return (
     <Col className="space-grotesk-small" style={cardStyle} xs={12} lg={4}>
-      <Image src={image} fluid className="py-3" />
+      <Image src={steward.image} fluid className="py-3" />
       <Link
-        to={link ?? "#"}
+        to={steward.link ?? "#"}
         style={{
           textDecoration: "none",
         }}
       >
-        <h1 className="sub-heading">{title}</h1>
+        <h1 className="sub-heading">{steward.name}</h1>
       </Link>
 
-      <h3>{location}</h3>
+      <h3>{steward.location}</h3>
 
-      <h5>{date}</h5>
+      <h5>{steward.dateTrained}</h5>
       <p
         style={{
           textAlign: "justify",
         }}
       >
-        {bodyText}
+        {steward.description}
       </p>
     </Col>
   );
