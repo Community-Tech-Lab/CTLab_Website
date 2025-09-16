@@ -24,7 +24,7 @@ import IsocStewards from "../Data.ts";
 const Stewards = () => {
   //hooks
   const [isMobile, setIsMobile] = useState<boolean>(
-    window.matchMedia("(max-width: 768px").matches
+    window.matchMedia("(max-width: 768px").matches,
   );
 
   useEffect(() => {
@@ -39,6 +39,7 @@ const Stewards = () => {
 
   return (
     <>
+      <Menu />
       <Banner
         bannerText="Our Digital Stewards"
         bannerColor="red"
@@ -64,15 +65,17 @@ const Stewards = () => {
             title="Networking"
             image={Networking}
             bodyText="Topics covered include but are not limited to:"
-            listedItems={["Foo", "Bar", "Something"]}
+            listedItems={[
+              "Wireless Antenna Configuration",
+              "Router Configuration ",
+              "Linux Protocols",
+            ]}
           />
           <CurriculumCard
             title="Web Development"
             image={WebDev}
-            bodyText="We encourage our stewards to also be builders. Covering skills such as
-          Local Server Hosting
-          HTML, CSS, JS
-          React.js"
+            bodyText="We encourage our stewards to also be builders. Covering skills such as:"
+            listedItems={["Local Server Hosting", "HTML, CSS, JS", "React.js"]}
           />
           <CurriculumCard
             title="Community Outreach"
@@ -89,20 +92,16 @@ const Stewards = () => {
             <StewardCard steward={steward} key={index} />
           ))}
         </Row>
-   
       </Container>
-<<<<<<< HEAD
 
       <Container>
-        <TextImageBlock
+        <TextImgBlock
           title="Discotech"
           image={Discotech}
           bodyText="We make a great effort to engage with our local community as much as possible. Each cohort works towards planning a community event known as a Discovery of tech event, otherwise known as a discotech. allowing for our stewards to directly  communicate with community members on Digital equity issues and technology that could be used to address those issues."
         />
       </Container>
-=======
-           <Footer />
->>>>>>> 166dd4e926b094b15115d5698f8123fe582d6d9b
+      <Footer />
     </>
   );
 };
