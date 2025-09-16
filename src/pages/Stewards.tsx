@@ -24,7 +24,7 @@ import IsocStewards from "../Data.ts";
 const Stewards = () => {
   //hooks
   const [isMobile, setIsMobile] = useState<boolean>(
-    window.matchMedia("(max-width: 768px").matches,
+    window.matchMedia("(max-width: 768px").matches
   );
 
   useEffect(() => {
@@ -80,10 +80,12 @@ const Stewards = () => {
           <CurriculumCard
             title="Community Outreach"
             image={CommunityOutreach}
-            bodyText="Embodying the Train the trainer model, we also Train our stewards in
-          Digital Justice Principles
-          Community organization
-          Workshop facilitation"
+            bodyText="Embodying the Train the trainer model, we also Train our stewards in"
+            listedItems={[
+              "Digital Justice Principles",
+              "Community organization",
+              "Workshop facilitation",
+            ]}
           />
         </Row>
 
