@@ -12,6 +12,7 @@ import bannerPicture from "../assets/visit_banner.svg";
 import Networking from "../assets/cablecrimping.png";
 import WebDev from "../assets/WebDev.png";
 import CommunityOutreach from "../assets/CommunityOutreach.png";
+import Discotech from "../assets/Discotech.png";
 
 //hook imports
 import { useEffect, useState } from "react";
@@ -83,6 +84,14 @@ const Stewards = () => {
           Workshop facilitation"
           />
         </Row>
+      </Container>
+
+      <Container>
+        <TextImageBlock
+          title="Discotech"
+          image={Discotech}
+          bodyText="We make a great effort to engage with our local community as much as possible. Each cohort works towards planning a community event known as a Discovery of tech event, otherwise known as a discotech. allowing for our stewards to directly  communicate with community members on Digital equity issues and technology that could be used to address those issues."
+        />
       </Container>
     </>
   );
