@@ -89,11 +89,14 @@ const Stewards = () => {
           />
         </Row>
 
-        <Row>
+        <div style={{
+          display: "flex",
+          flexFlow: "wrap"
+        }}>
           {IsocStewards.map((steward, index) => (
             <StewardCard steward={steward} key={index} />
           ))}
-        </Row>
+        </div>
       </Container>
 
       <Container>
