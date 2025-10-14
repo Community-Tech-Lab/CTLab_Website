@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import StewardCard from "../components/StewardCard.tsx";
 import TextImgBlock from "../components/TextImgBlock.tsx";
+// import BigCard from "../components/BigCard.tsx";
 
 //Image imports
 import bannerPicture from "../assets/visit_banner.svg";
@@ -103,6 +104,7 @@ const Stewards = () => {
           bodyText="We make a great effort to engage with our local community as much as possible. Each cohort works towards planning a community event known as a Discovery of tech event, otherwise known as a discotech. allowing for our stewards to directly  communicate with community members on Digital equity issues and technology that could be used to address those issues."
         />
       </Container>
+
       <Footer />
     </>
   );
