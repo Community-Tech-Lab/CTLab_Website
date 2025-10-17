@@ -92,6 +92,19 @@ const Stewards = () => {
         </Row>
       </Container>
       <BigCard />
+
+      {/*<TextImgBlock
+        title="Grassroots Stewards"
+        bodyText="Thanks to the funding of Internet Society Foundation, we are able to train the following grassroots organizations in building and maintaining their own Portable Newtork Kits."
+      />*/}
+
+      <h1>Grassroots Stewards</h1>
+      <p>
+        Thanks to the funding of Internet Society Foundation, we are able to
+        train the following grassroots organizations in building and maintaining
+        their own Portable Newtork Kits.
+      </p>
+
       <Container>
         <div
           style={{

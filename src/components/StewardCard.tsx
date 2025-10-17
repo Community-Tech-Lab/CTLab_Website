@@ -77,8 +77,8 @@ const StewardCard = ({ steward }: Props) => {
     // </Col>
     <Col className="space-grotesk" style={cardStyle} xs={12} lg={4}>
       <div className="" style={txtStyle}>
-        <h2>{steward.name}</h2>
         <h5>{steward.dateTrained}</h5>
+        <h2>{steward.name}</h2>
       </div>
       <img src={steward.image} style={imgStyle}></img>
     </Col>
