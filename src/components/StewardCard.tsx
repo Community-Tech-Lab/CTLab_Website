@@ -9,12 +9,20 @@ interface Props {
 }
 
 const StewardCard = ({ steward }: Props) => {
+  function getRandomHexColor(): string {
+    const colors = ["#0000FF", "#FFFF00", "#FF0000"]; // blue, yellow, red
+    const randomIndex = Math.floor(Math.random() * colors.length);
+    const baseColor = colors[randomIndex];
+    const opacityHex = "59"; // 45% opacity in hex
+
+    return `${baseColor}${opacityHex}`;
+  }
+
   const cardStyle: React.CSSProperties = {
     // backgroundImage: `url(${steward.image})`,
     // backgroundSize: "contain",
     // backgroundPosition: "center",
     // backgroundRepeat: "no-repeat",
-    // aspectRatio: "16/9"
     margin: 0,
     position: "relative",
   };
@@ -25,7 +33,7 @@ const StewardCard = ({ steward }: Props) => {
     // backgroundRepeat: "no-repeat",
     // aspectRatio: "16/9"
     position: "relative",
-    width: "100%"
+    width: "100%",
   };
   const txtStyle: React.CSSProperties = {
     // backgroundImage: `url(${steward.image})`,
@@ -35,6 +43,13 @@ const StewardCard = ({ steward }: Props) => {
     // aspectRatio: "16/9"
     position: "absolute",
     zIndex: 2,
+    color: "#ffeceeff",
+    height: "100%",
+    width: "100%",
+    display: "flex",
+    flexDirection: "column-reverse",
+    padding: "1rem",
+    backgroundColor: getRandomHexColor(),
   };
 
   return (
@@ -61,6 +76,10 @@ const StewardCard = ({ steward }: Props) => {
     //   </p>
     // </Col>
     <Col className="space-grotesk" style={cardStyle} xs={12} lg={4}>
+      <div className="" style={txtStyle}>
+        <h2>{steward.name}</h2>
+        <h5>{steward.dateTrained}</h5>
+      </div>
       <img src={steward.image} style={imgStyle}></img>
     </Col>
   );
