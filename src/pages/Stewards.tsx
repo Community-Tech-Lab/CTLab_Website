@@ -90,7 +90,9 @@ const Stewards = () => {
             ]}
           />
         </Row>
-
+      </Container>
+      <BigCard />
+      <Container>
         <div
           style={{
             display: "flex",
@@ -104,7 +106,6 @@ const Stewards = () => {
       </Container>
 
       <Container></Container>
-      <BigCard />
       <Footer />
     </>
   );
