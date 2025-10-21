@@ -97,13 +97,28 @@ const Stewards = () => {
         title="Grassroots Stewards"
         bodyText="Thanks to the funding of Internet Society Foundation, we are able to train the following grassroots organizations in building and maintaining their own Portable Newtork Kits."
       />*/}
-
-      <h1>Grassroots Stewards</h1>
-      <p>
-        Thanks to the funding of Internet Society Foundation, we are able to
-        train the following grassroots organizations in building and maintaining
-        their own Portable Newtork Kits.
-      </p>
+      <Container>
+        <h1
+          style={{
+            color: "#AC3D52",
+            fontFamily: "Space Grotesk",
+            textAlign: "center",
+            borderBottom: "1px solid black",
+          }}
+        >
+          Grassroots Stewards
+        </h1>
+        <p
+          style={{
+            fontFamily: "Space Grotesk",
+            margin: "20px",
+          }}
+        >
+          Thanks to the funding of Internet Society Foundation, we are able to
+          train the following grassroots organizations in building and
+          maintaining their own Portable Newtork Kits.
+        </p>
+      </Container>
 
       <Container>
         <div

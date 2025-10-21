@@ -25,7 +25,7 @@ interface bttnProps {
 function App() {
   //hooks
   const [isMobile, setIsMobile] = useState<boolean>(
-    window.matchMedia("(max-width: 768px").matches
+    window.matchMedia("(max-width: 768px").matches,
   );
 
   useEffect(() => {
@@ -91,16 +91,7 @@ function App() {
           />
         </Row>
       </Container>
-      <ColoredTextBanner
-        image1={teachingKits}
-        image2={nyuStewards}
-        title="Digital Stewardship Program"
-        outerColor="#AC3D52"
-        innerColor="#CF698F"
-        bodyText={stewProgText}
-        isMobile={isMobile}
-        button={dsBttnProps}
-      />
+
       <Container className="py-3 my-3">
         <Row className="mt-3 mx-3">
           <h1 className="main-heading">Portable Network Kits</h1>
