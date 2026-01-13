@@ -1,10 +1,6 @@
 //in progress
 const CommunityNetworks = () => {
-  return (
-    <>
-      <div></div>
-    </>
-  );
+  return <></>;
 };
 
 export default CommunityNetworks;
