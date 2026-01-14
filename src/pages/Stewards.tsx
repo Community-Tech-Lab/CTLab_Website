@@ -6,14 +6,12 @@ import Row from "react-bootstrap/Row";
 import StewardCard from "../components/StewardCard.tsx";
 import TextImgBlock from "../components/TextImgBlock.tsx";
 import BigCard from "../components/BigCard.tsx";
-// import BigCard from "../components/BigCard.tsx";
 
 //Image imports
 import bannerPicture from "../assets/visit_banner.svg";
 import Networking from "../assets/cablecrimping.png";
 import WebDev from "../assets/WebDev.png";
 import CommunityOutreach from "../assets/CommunityOutreach.png";
-import Discotech from "../assets/Discotech.png";
 
 //hook imports
 import { useEffect, useState } from "react";
@@ -26,8 +24,10 @@ import IsocStewards from "../Data.ts";
 const Stewards = () => {
   //hooks
   const [isMobile, setIsMobile] = useState<boolean>(
-    window.matchMedia("(max-width: 768px").matches,
+    window.matchMedia("(max-width: 768px").matches
   );
+
+  // const [isOpen, setIsOpen] = useState<boolean>(false);
 
   useEffect(() => {
     const mediaQuery: MediaQueryList = window.matchMedia("(max-width: 768px)");
@@ -62,7 +62,6 @@ const Stewards = () => {
           bodyText="Through our use of the Portable network kits we are able to cover a variety of topics. Resulting in the creation of three main pillars that make up the bulk of our digital stewards training. Each centered around our digital Justice principles ensuring that the material we cover can be used to the benefit of our communities."
         />
         <Row>
-          {" "}
           <CurriculumCard
             title="Networking"
             image={Networking}
@@ -92,11 +91,6 @@ const Stewards = () => {
         </Row>
       </Container>
       <BigCard />
-
-      {/*<TextImgBlock
-        title="Grassroots Stewards"
-        bodyText="Thanks to the funding of Internet Society Foundation, we are able to train the following grassroots organizations in building and maintaining their own Portable Newtork Kits."
-      />*/}
       <Container>
         <h1
           style={{
@@ -120,7 +114,7 @@ const Stewards = () => {
         </p>
       </Container>
 
-      <Container>
+      <div>
         <div
           style={{
             display: "flex",
@@ -128,12 +122,11 @@ const Stewards = () => {
           }}
         >
           {IsocStewards.map((steward, index) => (
-            <StewardCard steward={steward} key={index} />
+            <StewardCard index={index} steward={steward} key={index} />
           ))}
         </div>
-      </Container>
+      </div>
 
-      <Container></Container>
       <Footer />
     </>
   );

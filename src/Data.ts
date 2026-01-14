@@ -1,7 +1,7 @@
 import kcawImg from "./assets/Steward Photos/KCAW.jpg";
 import theJoyProjImg from "./assets/Steward Photos/TheJoyProject.jpeg";
 import DBFSNImg from "./assets/Steward Photos/Piper.jpeg";
-import rrcImg from "./assets/Steward Photos/RRC.jpeg";
+import rrcImg from "./assets/Steward Photos/RRC.jpg";
 import endstateAtlImg from "./assets/Steward Photos/endstate.png";
 import ienImg from "./assets/Steward Photos/Govinda.jpeg";
 import bvlbanchaImg from "./assets/Steward Photos/bvlbancha.jpeg";
