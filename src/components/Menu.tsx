@@ -31,6 +31,7 @@ const Menu = () => {
     borderRadius: "100%",
     boxShadow: "3px 1px 1px rgba(0, 0, 0, 0.25)",
     color: "white",
+    zIndex: "100"
   };
 
   const menuStyle: React.CSSProperties = {
