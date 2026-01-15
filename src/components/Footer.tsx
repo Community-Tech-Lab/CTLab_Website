@@ -12,7 +12,7 @@ const Footer = () => {
   };
 
   return (
-    <Container style={footerStyle} fluid className="py-2">
+    <Container style={footerStyle} fluid className="pt-2">
       <Row>
         <Col xs={12} lg={3} className="my-2">
           <h2 className="footer-heading">Stewards Today, Leaders Tommorow</h2>
@@ -20,9 +20,7 @@ const Footer = () => {
 
         <Col xs={12} md={4} lg={3} className="my-2">
           <h3 className="footer-sub-heading">Community Tech NY</h3>
-          <p className="space-grotesk white">
-            email: info@communitytechny.org
-          </p>
+          <p className="space-grotesk white">email: info@communitytechny.org</p>
           <Row>
             <Col className="white" xs={2}>
               <Link to="https://www.instagram.com/commtechny?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
@@ -40,10 +38,7 @@ const Footer = () => {
             </Col>
           </Row>
           <Link to="https://communitytechny.org">
-            <Button
-              className="px-0 py-3 space-grotesk white"
-              variant="link"
-            >
+            <Button className="px-0 py-3 space-grotesk white" variant="link">
               View Website <GoLinkExternal />
             </Button>
           </Link>
@@ -72,13 +67,43 @@ const Footer = () => {
             211 South 4th St, Brooklyn, NY 11211
           </p>
           <Link to="https://maps.app.goo.gl/oY2DLpA937ruiMcL6">
-            <Button
-              className="px-0 py-3 space-grotesk white"
-              variant="link"
-            >
+            <Button className="px-0 py-3 space-grotesk white" variant="link">
               View Map <GoLinkExternal />
             </Button>
           </Link>
+        </Col>
+      </Row>
+      <Row>
+        <Col
+          xs={12}
+          className="d-flex justify-content-center align-items-center py-2"
+          style={{
+            backgroundColor: "#3004ae",
+          }}
+        >
+          <p
+            className="space-grotesk white"
+            style={{
+              fontWeight: "500",
+              fontSize: "large",
+              textAlign: "center",
+            }}
+          >
+            Website Designed by{" "}
+            <a
+              className="white"
+              href="www.linkedin.com/in/oscar-comunidad-90b224168"
+            >
+              Oscar Comunidad
+            </a>{" "}
+            and{" "}
+            <a
+              className="white"
+              href="https://www.linkedin.com/in/tiffany-lau-joa/"
+            >
+              Tiffany Lau Joa
+            </a>
+          </p>
         </Col>
       </Row>
     </Container>
