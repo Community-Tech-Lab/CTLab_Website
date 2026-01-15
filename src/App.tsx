@@ -1,9 +1,10 @@
 //image imports
 import home_banner from "./assets/lab_photo.svg";
 import nyuStewards from "./assets/nyu_stewards.svg";
-import antenna_logo from "./assets/PNK Logos/1.svg";
+import antenna_logo from "./assets/PNK_Logos/antenna.svg";
 import teachingKits from "./assets/PNK_teaching_kits.svg";
 import pnkImg from "./assets/pnkimage_2.svg";
+
 //component imports
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -91,16 +92,7 @@ function App() {
           />
         </Row>
       </Container>
-      <ColoredTextBanner
-        image1={teachingKits}
-        image2={nyuStewards}
-        title="Digital Stewardship Program"
-        outerColor="#AC3D52"
-        innerColor="#CF698F"
-        bodyText={stewProgText}
-        isMobile={isMobile}
-        button={dsBttnProps}
-      />
+
       <Container className="py-3 my-3">
         <Row className="mt-3 mx-3">
           <h1 className="main-heading">Portable Network Kits</h1>

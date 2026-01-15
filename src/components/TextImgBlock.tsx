@@ -1,7 +1,6 @@
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
@@ -12,10 +11,10 @@ interface bttnProps {
 }
 
 interface Props {
-  image: string;
+  image?: string;
   title?: string;
   bodyText: string;
-  flip: boolean;
+  flip?: boolean;
   button?: bttnProps;
 }
 
@@ -24,25 +23,29 @@ const TextImgBlock = ({ bodyText, image, title, flip, button }: Props) => {
     <Col xs={12} className="my-3">
       <Container>
         <Row>
+          {image ? (
+            <Col
+              xs={12}
+              md={4}
+              className="d-flex justify-content-center flex-column align-items-left"
+            >
+              <img src={image}></img>
+              {button ? (
+                <Link to={button ? button.link : "/"}>
+                  <Button
+                    className="space-grotesk-small my-3"
+                    variant={button.variant}
+                  >
+                    {button.title}
+                  </Button>
+                </Link>
+              ) : null}
+            </Col>
+          ) : (
+            <></>
+          )}
           <Col
-            xs={12}
-            md={4}
-            className="d-flex justify-content-center flex-column align-items-left"
-          >
-            <Image fluid src={image} rounded />
-            {button ? (
-              <Link to={button ? button.link : "/"}>
-                <Button
-                  className="space-grotesk-small my-3"
-                  variant={button.variant}
-                >
-                  {button.title}
-                </Button>
-              </Link>
-            ) : null}
-          </Col>
-          <Col
-            md={{ order: flip ? "first" : "last" }}
+            md={{ order: flip ? "first" : "last", span: image ? 8 : 12 }}
             className={
               title
                 ? "d-flex justify-content-center flex-column"
@@ -60,7 +63,7 @@ const TextImgBlock = ({ bodyText, image, title, flip, button }: Props) => {
               }}
               className={
                 title
-                  ? "space-grotesk-small p-3"
+                  ? "space-grotesk p-3"
                   : "space-grotesk boxxed-text p-3"
               }
             >

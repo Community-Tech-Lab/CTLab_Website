@@ -45,7 +45,7 @@ const PnkTab = ({ title, body, image, materials }: Props) => {
             style={{
               whiteSpace: "pre-line",
             }}
-            className="space-grotesk-small"
+            className="space-grotesk"
           >
             {body}
           </p>
@@ -76,7 +76,7 @@ const PnkTab = ({ title, body, image, materials }: Props) => {
             <Link to={material.link ? material.link : "/"}>
               {material.link ? (
                 <Button
-                  className="space-grotesk-small my-3 p-0"
+                  className="space-grotesk my-3 p-0"
                   variant={"link"}
                 >
                   Learn More <GoLinkExternal />

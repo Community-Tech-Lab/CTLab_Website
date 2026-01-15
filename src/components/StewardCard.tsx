@@ -1,57 +1,98 @@
 //component imports
 import React from "react";
 import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
-import { Link } from "react-router-dom";
+import Modal from "./Modal";
+import { useState } from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+
+import closeBtn from "../assets/Site_Icons/close_btn.svg";
 
 interface Props {
-  title: string;
-  image: string;
-  bodyText: string;
-  date?: string;
-  link?: string;
-  location: string;
+  steward: Steward;
+  onClick?: () => void;
+  index: number;
 }
 
-const StewardCard = ({
-  title,
-  image,
-  bodyText,
-  date,
-  link,
-  location,
-}: Props) => {
+const StewardCard = ({ steward }: Props) => {
+  function getRandomHexColor(): string {
+    const colors = ["#0000FF", "#FFFF00", "#FF0000"]; // blue, yellow, red
+    const randomIndex = Math.floor(Math.random() * colors.length);
+    const baseColor = colors[randomIndex];
+    const opacityHex = "45"; // 45% opacity in hex
+
+    return `${baseColor}${opacityHex}`;
+  }
+
   const cardStyle: React.CSSProperties = {
-    textWrap: "wrap",
-    display: "flex",
-    flexFlow: "column",
-    justifyContent: "center",
-    height: "100%",
+    margin: 0,
+    position: "relative",
   };
-
+  const imgStyle: React.CSSProperties = {
+    position: "relative",
+    width: "100%",
+  };
+  const txtStyle: React.CSSProperties = {
+    position: "absolute",
+    zIndex: 2,
+    color: "#ffeceeff",
+    height: "100%",
+    width: "100%",
+    display: "flex",
+    flexDirection: "column-reverse",
+    padding: "1rem",
+    backgroundColor: getRandomHexColor(),
+  };
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
-    <Col className="space-grotesk-small" style={cardStyle} xs={12} lg={4}>
-      <Image src={image} fluid className="py-3" />
-      <Link
-        to={link ?? "#"}
-        style={{
-          textDecoration: "none",
-        }}
-      >
-        <h1 className="sub-heading">{title}</h1>
-      </Link>
+    <>
+      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+        <Container fluid style={{ fontFamily: "Space Grotesk" }}>
+          <Row className="d-flex justify-content-end">
+            <img
+              src={closeBtn}
+              className="modal-close-btn"
+              onClick={() => setIsOpen(false)}
+            ></img>
+          </Row>
+          <Row>
+            <Col
+              xs={12}
+              md={12}
+              lg={4}
+              xl={4}
+              className=" d-flex justify-content-center"
+            >
+              <img
+                src={steward.image}
+                className="modal-img"
+                style={{ boxShadow: "3px 1px 1px rgb(217, 217, 217)" }}
+              ></img>
+            </Col>
+            <Col>
+              <h1 className="main-heading">{steward.name}</h1>
+              <h4 className="sub-heading"> {steward.dateTrained}</h4>
+              <p className="modal-description">{steward.description}</p>
+            </Col>
+          </Row>
+        </Container>
+      </Modal>
 
-      <h3>{location}</h3>
-
-      <h5>{date}</h5>
-      <p
-        style={{
-          textAlign: "justify",
-        }}
+      <Col
+        className="space-grotesk"
+        style={cardStyle}
+        xs={12}
+        lg={4}
+        xl={3}
+        onClick={() => setIsOpen(true)}
       >
-        {bodyText}
-      </p>
-    </Col>
+        <div className="" style={txtStyle}>
+          <h5>{steward.dateTrained}</h5>
+          <h2>{steward.name}</h2>
+        </div>
+        <img src={steward.image} style={imgStyle}></img>
+      </Col>
+    </>
   );
 };
 
