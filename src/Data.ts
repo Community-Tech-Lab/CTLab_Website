@@ -27,7 +27,7 @@ const IsocStewards: Steward[] = [
     dateTrained: "Trained on Oct 15th - 18th, 2024",
     location: "Sitka, Alaska",
     description:
-      "KCAW is a community radio station located in sitka, alaska. KCAW provides essential information services such as Emergency Alert System and AMBER announcements and severe weather warnings, as well as local, regional, state, national and international news. As a member of CoastAlaska, it creates and archives stories of its community members as radio content for the station to broadcast.",
+      "KCAW is a community radio station located in Sitka, Alaska. KCAW provides essential information services such as Emergency Alert System and AMBER announcements and severe weather warnings, as well as local, regional, state, national and international news. As a member of CoastAlaska, it creates and archives stories of its community members as radio content for the station to broadcast.",
   },
   {
     name: "The Joy Project",
