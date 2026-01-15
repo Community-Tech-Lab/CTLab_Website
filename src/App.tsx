@@ -1,15 +1,15 @@
 //image imports
 import home_banner from "./assets/lab_photo.svg";
-import nyuStewards from "./assets/nyu_stewards.svg";
+// import nyuStewards from "./assets/nyu_stewards.svg";
 import antenna_logo from "./assets/PNK_Logos/antenna.svg";
-import teachingKits from "./assets/PNK_teaching_kits.svg";
+// import teachingKits from "./assets/PNK_teaching_kits.svg";
 import pnkImg from "./assets/pnkimage_2.svg";
 
 //component imports
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Banner from "./components/Banner";
-import ColoredTextBanner from "./components/ColoredTextBanner";
+// import ColoredTextBanner from "./components/ColoredTextBanner";
 import Menu from "./components/Menu";
 import TextImgBlock from "./components/TextImgBlock";
 
@@ -43,8 +43,8 @@ function App() {
 
     Its purpose being to further their efforts to combat digital inequality within Black and Brown communities by providing a space in which people can come through learn the ins and outs of everyday technologies that are otherwise foreign to them. What sets this initiative apart from similar spaces in New York City, is that participants don't just sit in on lectures or workshops, they gain valuable hands-on experience with proper equipment, with networking tools such as servers, antennas, routers, etc. We hope to empower people through the Digital Steward program and the use of the CTNY's own PNKs as teaching tools.
 `;
-  const stewProgText: string =
-    "This is the main program offered here at the Community Tech Lab. Facilitated by El Puente Staff and CTNY staff trained to help introduce community members to the fundementals of computer networking. Everything from configuring routers, to setting up linux server. All culminating in the stewards deploying Portable Network Kits with the understanding of how to troubleshoot and configure the equipment themselves.";
+  // const stewProgText: string =
+  //   "This is the main program offered here at the Community Tech Lab. Facilitated by El Puente Staff and CTNY staff trained to help introduce community members to the fundementals of computer networking. Everything from configuring routers, to setting up linux server. All culminating in the stewards deploying Portable Network Kits with the understanding of how to troubleshoot and configure the equipment themselves.";
 
   const openingText: string =
     "The Community Tech Lab is a hands-on tech and digital equity learning space located at El Puente’s flagship Leadership Center in South Williamsburg.  The first of its kind in NYC, the Lab launched in January 2023 through a partnership between CTNY and El Puente and in collaboration with the communities it serves.";
@@ -53,10 +53,10 @@ function App() {
 
     `;
 
-  const dsBttnProps: bttnProps = {
-    title: "Learn More",
-    link: "stewards",
-  };
+  // const dsBttnProps: bttnProps = {
+  //   title: "Learn More",
+  //   link: "stewards",
+  // };
 
   const pnkBttnProps: bttnProps = {
     title: "Explore PNKs",
