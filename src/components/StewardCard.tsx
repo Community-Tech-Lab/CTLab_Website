@@ -6,6 +6,8 @@ import { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
+import closeBtn from "../assets/Site_Icons/close_btn.svg";
+
 interface Props {
   steward: Steward;
   onClick?: () => void;
@@ -46,6 +48,13 @@ const StewardCard = ({ steward }: Props) => {
     <>
       <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
         <Container fluid style={{ fontFamily: "Space Grotesk" }}>
+          <Row className="d-flex justify-content-end">
+            <img
+              src={closeBtn}
+              className="modal-close-btn"
+              onClick={() => setIsOpen(false)}
+            ></img>
+          </Row>
           <Row>
             <Col
               xs={12}
@@ -54,7 +63,11 @@ const StewardCard = ({ steward }: Props) => {
               xl={4}
               className=" d-flex justify-content-center"
             >
-              <img src={steward.image} className="modal-img" style={{boxShadow: "3px 1px 1px rgb(217, 217, 217)"}}></img>
+              <img
+                src={steward.image}
+                className="modal-img"
+                style={{ boxShadow: "3px 1px 1px rgb(217, 217, 217)" }}
+              ></img>
             </Col>
             <Col>
               <h1 className="main-heading">{steward.name}</h1>
