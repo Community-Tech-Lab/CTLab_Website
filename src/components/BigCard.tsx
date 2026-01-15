@@ -9,7 +9,6 @@ const BigCard = () => {
         className="description"
         style={{
           fontFamily: "Space Grotesk",
-          margin: "20px",
         }}
       >
         We make a great effort to engage with our local community as much as

@@ -54,12 +54,12 @@ const StewardCard = ({ steward }: Props) => {
               xl={4}
               className=" d-flex justify-content-center"
             >
-              <img src={steward.image} className="modal-img"></img>
+              <img src={steward.image} className="modal-img" style={{boxShadow: "3px 1px 1px rgb(217, 217, 217)"}}></img>
             </Col>
             <Col>
               <h1 className="main-heading">{steward.name}</h1>
               <h4 className="sub-heading"> {steward.dateTrained}</h4>
-              <p style={{fontSize: "1.5rem"}}>{steward.description}</p>
+              <p className="modal-description">{steward.description}</p>
             </Col>
           </Row>
         </Container>
