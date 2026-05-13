@@ -10,8 +10,20 @@ import aprodecImg from "./assets/Steward Photos/aprodec.jpg";
 import lcanImg from "./assets/Steward Photos/LCAN.jpg";
 import lsImg from "./assets/los_sures.svg";
 import codeswitch from "./assets/c0deswitch.png";
+import bhnp from "./assets/Steward Photos/BHNP.jpg";
 
 const IsocStewards: Steward[] = [
+  {
+    name: "Buffalo Neighborhood Hubs Project",
+    dateTrained: "Trained on March 16th - March 19th, 2026",
+    image: bhnp,
+    location: "Buffalo, New York",
+    description: `The Buffalo Neighborhood Hubs Project (BNHP) builds block-level resilience by putting skills,
+    resources, and decision-making power directly in the hands of residents. Crises don't wait! Climate
+    emergencies, power outages, and everyday hardships demand neighbors who are ready to act. BNHP is a decentralized,
+    neighborhood-based initiative that trains local leaders as Community Responders. People with the knowledge and authority
+    to mobilize their blocks when it matters most.`,
+  },
   {
     name: "c0de switch",
     dateTrained: "Trained on April 13th - April 16th, 2025",
