@@ -24,7 +24,7 @@ import IsocStewards from "../Data.ts";
 const Stewards = () => {
   //hooks
   const [isMobile, setIsMobile] = useState<boolean>(
-    window.matchMedia("(max-width: 768px").matches
+    window.matchMedia("(max-width: 768px").matches,
   );
 
   // const [isOpen, setIsOpen] = useState<boolean>(false);
