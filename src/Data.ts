@@ -1,7 +1,7 @@
 import kcawImg from "./assets/Steward Photos/KCAW.jpg";
 import theJoyProjImg from "./assets/Steward Photos/TheJoyProject.jpeg";
 import DBFSNImg from "./assets/Steward Photos/Piper.jpeg";
-import rrcImg from "./assets/Steward Photos/RRC.jpg";
+import rrcImg from "./assets/Steward Photos/rrc.jpg";
 import endstateAtlImg from "./assets/Steward Photos/endstate.png";
 import ienImg from "./assets/Steward Photos/Govinda.jpeg";
 import bvlbanchaImg from "./assets/Steward Photos/bvlbancha.jpeg";
@@ -9,25 +9,30 @@ import acImg from "./assets/Steward Photos/activationresidency.jpeg";
 import aprodecImg from "./assets/Steward Photos/aprodec.jpg";
 import lcanImg from "./assets/Steward Photos/LCAN.jpg";
 import lsImg from "./assets/los_sures.svg";
-import codeswitch from "./assets/c0deswitch.png";
-import bhnp from "./assets/Steward Photos/BHNP.jpg";
+import codeswitchImg from "./assets/c0deswitch.png";
+import bnhpImg from "./assets/Steward Photos/BNHP.jpeg";
 
 const IsocStewards: Steward[] = [
   {
+    name: "Gear Switch",
+    dateTrained: "Trained on March 23th - March 26th, 2026",
+    image: bnhpImg,
+    location: "Humboldt Park, Chicago",
+    description:
+      "The Buffalo Neighborhood Hubs Project (BNHP) builds block-level resilience by putting skills, resources, and decision-making power directly in the hands of residents. Crises don't wait! Climate emergencies, power outages, and everyday hardships demand neighbors who are ready to act. BNHP is a decentralized, neighborhood-based initiative that trains local leaders as Community Responders. People with the knowledge and authority to mobilize their blocks when it matters most. At the center of this infrastructure are Portable Network Kits (PNK) — deployable tools that enable communication and mutual aid coordination during acute emergencies, keeping neighbors connected when conventional systems fail.",
+  },
+  {
     name: "Buffalo Neighborhood Hubs Project",
     dateTrained: "Trained on March 16th - March 19th, 2026",
-    image: bhnp,
+    image: bnhpImg,
     location: "Buffalo, New York",
-    description: `The Buffalo Neighborhood Hubs Project (BNHP) builds block-level resilience by putting skills,
-    resources, and decision-making power directly in the hands of residents. Crises don't wait! Climate
-    emergencies, power outages, and everyday hardships demand neighbors who are ready to act. BNHP is a decentralized,
-    neighborhood-based initiative that trains local leaders as Community Responders. People with the knowledge and authority
-    to mobilize their blocks when it matters most.`,
+    description:
+      "The Buffalo Neighborhood Hubs Project (BNHP) builds block-level resilience by putting skills, resources, and decision-making power directly in the hands of residents. Crises don't wait! Climate emergencies, power outages, and everyday hardships demand neighbors who are ready to act. BNHP is a decentralized, neighborhood-based initiative that trains local leaders as Community Responders. People with the knowledge and authority to mobilize their blocks when it matters most. At the center of this infrastructure are Portable Network Kits (PNK) — deployable tools that enable communication and mutual aid coordination during acute emergencies, keeping neighbors connected when conventional systems fail.",
   },
   {
     name: "c0de switch",
     dateTrained: "Trained on April 13th - April 16th, 2025",
-    image: codeswitch,
+    image: codeswitchImg,
     location: "Atlanta, Georgia",
     description:
       "c0de switch is a group of young, visionary activists based in Atlanta who are reimagining the relationship between technology and power. With a deep commitment to social justice, they aim to transform traditional power structures by building alternative tech infrastructures that center the needs of marginalized communities. c0de switch uses open-source tools to develop decentralized, community-controlled digital systems and creates spaces where activism can thrive sustainably and safely in the digital world. ",
@@ -39,7 +44,7 @@ const IsocStewards: Steward[] = [
     dateTrained: "Trained on Oct 15th - 18th, 2024",
     location: "Sitka, Alaska",
     description:
-      "KCAW is a community radio station located in sitka, alaska. KCAW provides essential information services such as Emergency Alert System and AMBER announcements and severe weather warnings, as well as local, regional, state, national and international news. As a member of CoastAlaska, it creates and archives stories of its community members as radio content for the station to broadcast.",
+      "KCAW is a community radio station located in Sitka, Alaska. KCAW provides essential information services such as Emergency Alert System and AMBER announcements and severe weather warnings, as well as local, regional, state, national and international news. As a member of CoastAlaska, it creates and archives stories of its community members as radio content for the station to broadcast.",
   },
   {
     name: "The Joy Project",

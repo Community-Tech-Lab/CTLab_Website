@@ -59,7 +59,7 @@ const Stewards = () => {
       <Container>
         <TextImgBlock
           title="Our Curriculum"
-          bodyText="Through our use of the Portable network kits we are able to cover a variety of topics. Resulting in the creation of three main pillars that make up the bulk of our digital stewards training. Each centered around our digital Justice principles ensuring that the material we cover can be used to the benefit of our communities."
+          bodyText="Through our use of the Portable Network Kits (PNK) we are able to cover a variety of topics. Resulting in the creation of three main pillars that make up the bulk of our digital stewards training. Each centered around our Digital Justice principles ensuring that the material we cover can be used to the benefit of our communities."
         />
         <Row>
           <CurriculumCard
@@ -108,7 +108,7 @@ const Stewards = () => {
             margin: "20px",
           }}
         >
-          Thanks to the funding of Internet Society Foundation, we are able to
+          Thanks to <a href="https://www.isocfoundation.org/">ISOC</a> funding, we are able to
           train the following grassroots organizations in building and
           maintaining their own Portable Network Kits.
         </p>
