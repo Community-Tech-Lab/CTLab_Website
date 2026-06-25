@@ -11,15 +11,16 @@ import lcanImg from "./assets/Steward Photos/LCAN.jpg";
 import lsImg from "./assets/los_sures.svg";
 import codeswitchImg from "./assets/c0deswitch.png";
 import bnhpImg from "./assets/Steward Photos/BNHP.jpeg";
+import gearSwitch from "./assets/Steward Photos/GearSwitch.jpg";
 
 const IsocStewards: Steward[] = [
   {
     name: "Gear Switch",
     dateTrained: "Trained on March 23th - March 26th, 2026",
-    image: bnhpImg,
+    image: gearSwitch,
     location: "Humboldt Park, Chicago",
     description:
-      "The Buffalo Neighborhood Hubs Project (BNHP) builds block-level resilience by putting skills, resources, and decision-making power directly in the hands of residents. Crises don't wait! Climate emergencies, power outages, and everyday hardships demand neighbors who are ready to act. BNHP is a decentralized, neighborhood-based initiative that trains local leaders as Community Responders. People with the knowledge and authority to mobilize their blocks when it matters most. At the center of this infrastructure are Portable Network Kits (PNK) — deployable tools that enable communication and mutual aid coordination during acute emergencies, keeping neighbors connected when conventional systems fail.",
+      "SwitchGear is a group of Chicago friends that met on the dance floor with a diverse set of skills and community engagements. We are a group of creative organizers engaged in relational network building, hyperlocal block-by-block organizing, and directed spaces like the CHAAD project.",
   },
   {
     name: "Buffalo Neighborhood Hubs Project",
