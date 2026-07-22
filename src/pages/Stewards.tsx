@@ -102,16 +102,16 @@ const Stewards = () => {
         >
           Grassroots Stewards
         </h1>
-        <p
+        <h5
           style={{
             fontFamily: "Space Grotesk",
             margin: "20px",
           }}
         >
-          Thanks to <a href="https://www.isocfoundation.org/">ISOC</a> funding, we are able to
-          train the following grassroots organizations in building and
-          maintaining their own Portable Network Kits.
-        </p>
+          Thank you to <a href="https://www.isocfoundation.org/">ISOC</a>{" "}
+          funding, we are able to train the following grassroots organizations
+          in building and maintaining their own Portable Network Kits.
+        </h5>
       </Container>
 
       <div>
