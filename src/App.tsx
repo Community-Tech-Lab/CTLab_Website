@@ -3,7 +3,7 @@ import home_banner from "./assets/lab_photo.svg";
 // import nyuStewards from "./assets/nyu_stewards.svg";
 import antenna_logo from "./assets/PNK_Logos/antenna.svg";
 // import teachingKits from "./assets/PNK_teaching_kits.svg";
-import pnkImg from "./assets/pnkimage_2.svg";
+import pnkImg from "./assets/PNK-Trophy.jpg";
 
 //component imports
 import Container from "react-bootstrap/Container";
