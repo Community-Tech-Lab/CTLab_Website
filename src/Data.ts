@@ -15,7 +15,7 @@ import gearSwitch from "./assets/Steward Photos/GearSwitch.jpg";
 
 const IsocStewards: Steward[] = [
   {
-    name: "Gear Switch",
+    name: "SwitchGear",
     dateTrained: "Trained on March 23th - March 26th, 2026",
     image: gearSwitch,
     location: "Humboldt Park, Chicago",
